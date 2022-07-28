@@ -111,7 +111,7 @@ function Components() {
         {
           data && data.map(el => (
             <div key={el.policy_name} className="policy_container">
-              <div className="policy_content" style={{ backgroundColor: el.color }}>
+              <div className="policy_content" style={{ backgroundColor: el.color, boxShadow: `2px 2px 6px ${el.color}` }}>
                 <h3>{el.policy_name}</h3>
                 <p>{el.policy_desc}</p>
                 <div className="policy_complete_container">
