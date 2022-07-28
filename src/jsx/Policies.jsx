@@ -1,7 +1,5 @@
-import React, {
-  /* useRef, useCallback, */ useEffect, useState
-} from 'react';
-import '../styles/components.less';
+import React, { useEffect, useState } from 'react';
+import '../styles/policies.less';
 
 // https://www.npmjs.com/package/react-is-visible
 import 'intersection-observer';
@@ -13,94 +11,108 @@ import IsVisible from 'react-is-visible';
 
 // const appID = '#app-root-2022-train_for_trade_ii_angola_components';
 
-function Components() {
+function Policies() {
   const [data, setData] = useState(false);
 
   useEffect(() => {
     setData([{
-      color: 'rgba(252, 213, 50, 0.5)',
+      component_color: 'rgba(252, 213, 50, 1)',
       component_name: 'National Green Export Review (NGER)',
       percentage: 40,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Honey policy'
+      policy_name: 'Honey policy',
+      text_color: '#000'
     }, {
-      color: 'rgba(252, 213, 50, 0.5)',
+      component_color: 'rgba(252, 213, 50, 1)',
       component_name: 'National Green Export Review (NGER)',
       percentage: 40,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Honey residue monitoring plans'
+      policy_name: 'Honey residue monitoring plans',
+      text_color: '#000'
     }, {
-      color: 'rgba(252, 213, 50, 0.5)',
+      component_color: 'rgba(252, 213, 50, 1)',
       component_name: 'National Green Export Review (NGER)',
       percentage: 40,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Fisheries Export strategy'
+      policy_name: 'Fisheries Export strategy',
+      text_color: '#000'
     }, {
-      color: 'rgba(238, 154, 59, 0.5)',
+      component_color: 'rgba(238, 154, 59, 1)',
       component_name: 'Trade Facilitation',
       percentage: 40,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'National Trade Facilitation Strategy'
+      policy_name: 'National Trade Facilitation Strategy',
+      text_color: '#000'
     }, {
-      color: 'rgba(226 ,75, 58, 0.5)',
+      component_color: 'rgba(226 ,75, 58, 1)',
       component_name: 'Transport & Logistics',
       percentage: 100,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Public-Private Partnership Law'
+      policy_name: 'Public-Private Partnership Law',
+      text_color: '#000'
     }, {
-      color: 'rgba(226 ,75, 58, 0.5)',
+      component_color: 'rgba(226 ,75, 58, 1)',
       component_name: 'Transport & Logistics',
       percentage: 100,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Public-Private Partnership decree'
+      policy_name: 'Public-Private Partnership decree',
+      text_color: '#000'
     }, {
-      color: 'rgba(226 ,75, 58, 0.5)',
+      component_color: 'rgba(226 ,75, 58, 1)',
       component_name: 'Transport & Logistics',
       percentage: 10,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Corridor review'
+      policy_name: 'Corridor review',
+      text_color: '#000'
     }, {
-      color: 'rgba(155, 56, 115, 0.5)',
+      component_color: 'rgba(155, 56, 115, 1)',
       component_name: 'Investment (IPR)',
       percentage: 100,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Invesment Policy Review of Angola'
+      policy_name: 'Investment Policy Review of Angola',
+      text_color: '#fff'
     }, {
-      color: 'rgba(155, 56, 115, 0.5)',
+      component_color: 'rgba(155, 56, 115, 1)',
       component_name: 'Investment (IPR)',
       percentage: 100,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Review of International Investment Agreements'
+      policy_name: 'Review of International Investment Agreements',
+      text_color: '#fff'
     }, {
-      color: 'rgba(155, 56, 115, 0.5)',
+      component_color: 'rgba(155, 56, 115, 1)',
       component_name: 'Investment (IPR)',
       percentage: 50,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Sustainable investment promotion strategy for agriculture'
+      policy_name: 'Sustainable investment promotion strategy for agriculture',
+      text_color: '#fff'
     }, {
-      color: 'rgba(155, 56, 115, 0.5)',
+      component_color: 'rgba(155, 56, 115, 1)',
       component_name: 'Investment (IPR)',
       percentage: 10,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Institutional investment facilitation strategy'
+      policy_name: 'Institutional investment facilitation strategy',
+      text_color: '#fff'
     }, {
-      color: 'rgba(15, 110, 157, 0.5)',
+      component_color: 'rgba(15, 110, 157, 1)',
       component_name: 'EMPRETEC',
       percentage: 40,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'National Entrepreneurship Strategy'
+      policy_name: 'National Entrepreneurship Strategy',
+      text_color: '#fff'
     }, {
-      color: 'rgba(96, 173, 208, 0.5)',
+      component_color: 'rgba(96, 173, 208, 1)',
       component_name: 'Commercial Diplomacy',
       percentage: 60,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Trade Policy Strategy'
+      policy_name: 'Trade Policy Strategy',
+      text_color: '#fff'
     }, {
-      color: 'rgba(125, 174, 88, 0.5)',
+      component_color: 'rgba(125, 174, 88, 1)',
       component_name: 'Creative Industries',
       percentage: 60,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
-      policy_name: 'Creative Economy Strategy'
+      policy_name: 'Creative Economy Strategy',
+      text_color: '#fff'
     }]);
   }, []);
 
@@ -111,7 +123,7 @@ function Components() {
         {
           data && data.map(el => (
             <div key={el.policy_name} className="policy_container">
-              <div className="policy_content" style={{ backgroundColor: el.color, boxShadow: `2px 2px 6px ${el.color}` }}>
+              <div className="policy_content" style={{ borderColor: el.component_color, boxShadow: `1px 1px 6px ${el.component_color}` }}>
                 <h3>{el.policy_name}</h3>
                 <p>{el.policy_desc}</p>
                 <div className="policy_complete_container">
@@ -119,7 +131,15 @@ function Components() {
                   <IsVisible once>
                     {(isVisible) => (
                       <div>
-                        <div className="bar" style={(isVisible === true) ? { width: `${el.percentage}%` } : { width: 0 }}>
+                        <div
+                          className="bar"
+                          style={(isVisible === true) ? {
+                            backgroundColor: el.component_color,
+                            color: el.text_color,
+                            textShadow: `1px 1px 1px ${el.component_color}`,
+                            width: `${el.percentage}%`
+                          } : { width: 0 }}
+                        >
                           <span className="value">{el.percentage}</span>
                           <span className="unit">%</span>
                         </div>
@@ -129,8 +149,9 @@ function Components() {
                 </div>
                 <div className="component_container">
                   <h4>
+                    <span className="component_indicator" style={{ backgroundColor: el.component_color }} />
                     <span className="component_label">Component</span>
-                    <span className="component_name">{el.policy_name}</span>
+                    <span className="component_name">{el.component_name}</span>
                   </h4>
                 </div>
               </div>
@@ -143,4 +164,4 @@ function Components() {
   );
 }
 
-export default Components;
+export default Policies;
