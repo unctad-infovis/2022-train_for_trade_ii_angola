@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600.css');
+
+@import 'colors.less';
+
+#app-root-2022-train_for_trade_ii_angola_map .app {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto auto;
+  max-width: 400px;
+  h2 {
+    font-size: 32px;
+    margin: auto auto 20px auto;
+  }
+  h3 {
+    color: #000;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+  .map_container {
+    overflow: scroll;
+    .path {
+      stroke-width: 2;
+      fill: #009edb;
+      stroke: #fff;
+      opacity: 1;
+      cursor: pointer;
+      &:hover {
+        fill: #72bf44;
+      }
+    }
+    foreignObject {
+      height: 40px;
+      pointer-events: none;
+      width: 80px;
+      div {
+        display: table;
+        height: 40px;
+        width: 80px;
+        p {
+          display: table-cell;
+          font-size: 16px;
+          margin: 0;
+          text-align: center;
+          text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+@import 'basics.less';
