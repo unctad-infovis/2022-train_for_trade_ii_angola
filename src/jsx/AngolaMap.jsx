@@ -26,8 +26,7 @@ function AngolaMap() {
   const names = useMemo(() => ['Bengo', 'Benguela', 'Bié', 'Cabinda', 'Cuando Cubango', 'Cuanza Norte', 'Cuanza Sul', 'Cunene', 'Huambo', 'Huíla', 'Luanda', 'Lunda Norte', 'Lunda Sul', 'Malanje', 'Moxico', 'Namibe', 'Uíge', 'Zaire'], []);
 
   const [selectedArea, setselectedArea] = useState('Select a area of interest from the map above');
-  const showData = useCallback((event, d) => {
-    console.log(d);
+  const showData = useCallback((event) => {
     setselectedArea(names[event.target.id]);
   }, [names]);
 
@@ -91,7 +90,7 @@ function AngolaMap() {
   const loadMapData = useCallback(() => {
     // https://cartographyvectors.com/map/1412-angola-with-regions
     // https://observablehq.com/@saneef/fix-geojson
-    d3.json('./assets/data/angola_map.json').then(data => {
+    d3.json('./assets/data/angola_map.topojson').then(data => {
       drawMap(data);
     });
   }, [drawMap]);
