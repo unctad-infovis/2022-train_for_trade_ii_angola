@@ -55,6 +55,9 @@ function AngolaMap() {
       .attr('id', (d, i) => i)
       .attr('class', 'path')
       // https://stackoverflow.com/questions/63693132/unable-to-get-node-datum-on-mouseover-in-d3-v6
+      .on('mouseover', (event, d) => {
+        showData(event, d);
+      })
       .on('click', (event, d) => {
         showData(event, d);
       });
