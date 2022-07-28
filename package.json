@@ -42,7 +42,8 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
+    "intersection-observer": "^0.12.2",
     "react-countup": "^6.3.0",
-    "react-visibility-sensor": "^5.1.1"
+    "react-is-visible": "^1.2.0"
   }
 }

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600.css');
+
+@import 'colors.less';
+
+#app-root-2022-train_for_trade_ii_angola_components .app {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto auto;
+  max-width: 1035px;
+  padding: 0 15px;
+  h2 {
+    font-size: 36px;
+    margin: auto auto 20px auto;
+  }
+  .policies_container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto auto 20px auto;
+    .policy_container {
+      box-sizing: border-box;
+      flex-basis: calc(100% / 3 - 10px);
+      flex-grow: 1;
+      flex-shrink: 0;
+      .policy_content {
+        box-sizing: border-box;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        position: relative;
+        width: 100%;
+        h3 {
+          color: #000;
+          font-size: 20px;
+          margin: 0 0 10px 0;
+        }
+        p {
+          font-size: 16px;
+          margin: 0 0 20px 0;
+        }
+        .policy_complete_container {
+          flex-grow: 1;
+          margin-bottom: 30px;
+          h4 {
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 5px;
+            letter-spacing: 0.02em;
+            margin: auto auto 5px auto;
+            text-transform: uppercase;
+          }
+          .bar {
+            background-color: #009edb;
+            color: #fff;
+            height: 30px;
+            line-height: 30px;
+            transition-duration: 2s;
+            transition-property: width;
+            transition-timing-function: ease-out;
+            .value {
+              padding-left: 10px;
+              font-family: "Open Sans";
+            }
+          }
+        }
+        .component_container {
+          bottom: 10px;
+          color: #000;
+          font-weight: 400;
+          left: 10px;
+          padding-right: 10px;
+          h4 {
+            font-size: 14px;
+            margin: auto auto auto auto;
+            .component_label {
+              font-size: 12px;
+              font-weight: 600;
+              letter-spacing: 0.02em;
+              margin-right: 5px;
+              text-transform: uppercase;
+            }
+            .component_name {
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@import 'basics.less';
