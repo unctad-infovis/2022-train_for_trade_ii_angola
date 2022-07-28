@@ -28,7 +28,7 @@ function SidePanel() {
   const [publicCount, setPublicCount] = useState(0);
   const [privateCount, setPrivateCount] = useState(0);
 
-  const defineCurrentAppWidth = () => Math.min(appRef.current.offsetWidth - 20 - 60, 300);
+  const defineCurrentAppWidth = () => Math.min(appRef.current.offsetWidth, 300) - 60;
 
   const easingFn = (t, b, c, d) => {
     const ts = (t /= d) * t;
