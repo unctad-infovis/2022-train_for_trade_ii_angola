@@ -123,7 +123,7 @@ function AngolaMap() {
     total_count: 5
   }], []);
 
-  const [selectedArea, setSelectedArea] = useState('Select a area of interest from the map above');
+  const [selectedArea, setSelectedArea] = useState('');
   const [areaComponentCount, setAreaComponentCount] = useState('');
   const [areaComponents, setAreaComponents] = useState([]);
   const showData = useCallback((event) => {
@@ -131,6 +131,7 @@ function AngolaMap() {
     setSelectedArea(area_name);
     setAreaComponentCount(componentData[event.target.id].total_count);
     setAreaComponents(componentData[event.target.id].components);
+    document.querySelector('.hint').style.display = 'none';
     document.querySelector('.area_information_container').style.display = 'inline-block';
     document.querySelector('.area_information_container').style.opacity = 1;
   }, [names, componentData]);
@@ -237,6 +238,7 @@ function AngolaMap() {
           </div>
         </div>
       </div>
+      <h3 className="hint">Select a area of interest from the map above</h3>
       <noscript>Your browser does not support JavaScript!</noscript>
     </div>
   );
