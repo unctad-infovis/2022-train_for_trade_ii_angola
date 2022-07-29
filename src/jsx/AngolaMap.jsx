@@ -222,7 +222,7 @@ function AngolaMap() {
             <h3>{selectedArea}</h3>
             <div className="total_count" style={areaComponentCount > 0 ? { display: 'block' } : { display: 'none' }}>
               <span className="value">{areaComponentCount}</span>
-              <span className="label">programmes</span>
+              <span className="label">{areaComponentCount > 1 ? 'programmes' : 'programme'}</span>
             </div>
             <h4 className="label" style={areaComponents.length > 0 ? { display: 'block' } : { display: 'none' }}>Components</h4>
             <div className="components_container">
