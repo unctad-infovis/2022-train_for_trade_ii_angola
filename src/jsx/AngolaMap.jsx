@@ -196,9 +196,11 @@ function AngolaMap() {
         }
         return d[1] - 20;
       })
+      .attr('height', 40)
+      .attr('width', 80)
       .append('xhtml:body')
       .attr('xmlns', 'http://www.w3.org/1999/xhtml')
-      .append('xhtml:p')
+      .append('xhtml:div')
       .html((d, i) => names[i]);
   }, [showData, names]);
 
@@ -223,7 +225,7 @@ function AngolaMap() {
             <h3>{selectedArea}</h3>
             <div className="total_count" style={areaComponentCount > 0 ? { display: 'block' } : { display: 'none' }}>
               <span className="value">{areaComponentCount}</span>
-              <span className="label">{areaComponentCount > 1 ? 'programmes' : 'programme'}</span>
+              <span className="label">{areaComponentCount > 1 ? 'beneficaries' : 'beneficary'}</span>
             </div>
             <h4 className="label" style={areaComponents.length > 0 ? { display: 'block' } : { display: 'none' }}>Components</h4>
             <div className="components_container">
