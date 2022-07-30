@@ -138,7 +138,8 @@ function SidePanel() {
             <div className="value">
               <div className="bar current" data-width={publicCount}>
                 <div className="change">
-                  +195
+                  +
+                  {parseInt((publicCount / publicTargetCount) * 100, 10)}
                   <span className="change_unit">%</span>
                 </div>
               </div>
@@ -163,7 +164,8 @@ function SidePanel() {
             <div className="value">
               <div className="bar current" data-width={privateCount}>
                 <div className="change">
-                  +528
+                  +
+                  {parseInt((privateCount / privateTargetCount) * 100, 10)}
                   <span className="change_unit">%</span>
                 </div>
               </div>

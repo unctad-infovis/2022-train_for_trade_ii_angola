@@ -23,6 +23,12 @@
       flex-basis: calc(100% / 3 - 15px);
       flex-grow: 1;
       flex-shrink: 0;
+      @media all and (max-width: 768px) {
+        flex-basis: calc(100% / 2 - 15px);
+      }
+      @media all and (max-width: 550px) {
+        flex-basis: calc(100% / 1 - 15px);
+      }
       .policy_content {
         border-radius: 10px;
         border-style: solid;
