@@ -14,7 +14,7 @@ import * as d3 from 'd3';
 import { geoRobinson } from 'd3-geo-projection';
 
 // https://www.npmjs.com/package/topojson
-import * as topojson from 'topojson';
+import * as topojson from 'topojson-client';
 
 // Load helpers.
 // import formatNr from './helpers/FormatNr.js';
