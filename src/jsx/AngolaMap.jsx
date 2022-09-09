@@ -118,9 +118,9 @@ function AngolaMap() {
     name: 'Uíge',
     total_count: 185
   }, {
-    components: ['Commercial Diplomacy', 'Creative Industries', 'EMPRETEC', 'Transport & Logistics'],
+    components: ['Commercial Diplomacy', 'National Green Export Review (NGER)', 'EMPRETEC'],
     name: 'Zaire',
-    total_count: 5
+    total_count: 60
   }], []);
 
   const [selectedArea, setSelectedArea] = useState('');
@@ -207,7 +207,7 @@ function AngolaMap() {
   const loadMapData = useCallback(() => {
     // https://cartographyvectors.com/map/1412-angola-with-regions
     // https://observablehq.com/@saneef/fix-geojson
-    d3.json('./assets/data/angola_map.topojson').then(data => {
+    d3.json((window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-ukraine_brief_3_dashboard/assets/data/angola_map.topojson' : './assets/data/angola_map.topojson').then(data => {
       drawMap(data);
     });
   }, [drawMap]);

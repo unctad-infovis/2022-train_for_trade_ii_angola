@@ -27,6 +27,8 @@ function SidePanel() {
   const [maleCount, setMaleCount] = useState(0);
   const [publicCount, setPublicCount] = useState(0);
   const [privateCount, setPrivateCount] = useState(0);
+  const [educationCount, setEducationCount] = useState(0);
+  const [ngoCount, setNGOCount] = useState(0);
 
   const defineCurrentAppWidth = () => Math.min(appRef.current.offsetWidth, 300) - 60;
 
@@ -45,6 +47,8 @@ function SidePanel() {
     setMaleCount(1489);
     setPublicCount(1044);
     setPrivateCount(835);
+    setEducationCount(160);
+    setNGOCount(145);
   }, []);
 
   useEffect(() => {
@@ -52,17 +56,22 @@ function SidePanel() {
   }, [barWidth]);
 
   const showTargets = useCallback(() => {
-    const barMax = Math.ceil(Math.max(publicCount, privateCount) / 10) * 10;
+    const barMax = Math.ceil(Math.max(publicCount, privateCount, educationCount, ngoCount) / 10) * 10;
     document.querySelector(`${appID} .targets_container`).style.opacity = 1;
+
     document.querySelector(`${appID} .public .bar.goal`).style.width = `${(publicTargetCount / barMax) * width}px`;
     document.querySelector(`${appID} .public .bar.current`).style.width = `${(publicCount / barMax) * width}px`;
 
     document.querySelector(`${appID} .private .bar.goal`).style.width = `${(privateTargetCount / barMax) * width}px`;
     document.querySelector(`${appID} .private .bar.current`).style.width = `${(privateCount / barMax) * width}px`;
+
+    document.querySelector(`${appID} .education .bar.current`).style.width = `${(educationCount / barMax) * width}px`;
+
+    document.querySelector(`${appID} .ngo .bar.current`).style.width = `${(ngoCount / barMax) * width}px`;
     setTimeout(() => {
       document.querySelectorAll(`${appID} .change`).forEach(el => { el.style.opacity = 1; });
     }, 2000);
-  }, [privateCount, publicCount]);
+  }, [privateCount, publicCount, educationCount, ngoCount]);
 
   const handleWindowResize = useCallback(() => {
     setBarWidth(defineCurrentAppWidth());
@@ -146,7 +155,6 @@ function SidePanel() {
               {publicCount}
               {' '}
               <span className="value_meta">people</span>
-
             </div>
           </div>
         </div>
@@ -170,6 +178,26 @@ function SidePanel() {
                 </div>
               </div>
               {privateCount}
+            </div>
+          </div>
+        </div>
+        <div className="target_container education">
+          <div className="title">Higher education institutions</div>
+          <div className="value_bar_wrapper">
+            <div className="label">Current</div>
+            <div className="value">
+              <div className="bar current" data-width={educationCount} />
+              {educationCount}
+            </div>
+          </div>
+        </div>
+        <div className="target_container ngo">
+          <div className="title">NGOs</div>
+          <div className="value_bar_wrapper">
+            <div className="label">Current</div>
+            <div className="value">
+              <div className="bar current" data-width={ngoCount} />
+              {ngoCount}
             </div>
           </div>
         </div>
