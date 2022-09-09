@@ -16,126 +16,140 @@ function Policies() {
 
   useEffect(() => {
     setData([{
-      component_color: 'rgba(155, 56, 115, 1)',
       component_bgcolor: 'rgba(155, 56, 115, 0.3)',
       component_bordercolor: 'rgba(155, 56, 115, 0.8)',
+      component_color: 'rgba(155, 56, 115, 1)',
+      component_image: 'Train_for_trade_commercial_diplomacy.png',
       component_name: 'Commercial Diplomacy',
       percentage: 60,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'Trade Policy Strategy',
       text_color: '#fff'
     }, {
-      component_color: 'rgba(238, 154, 59, 1)',
       component_bgcolor: 'rgba(238, 154, 59, 0.3)',
       component_bordercolor: 'rgba(238, 154, 59, 0.8)',
+      component_color: 'rgba(238, 154, 59, 1)',
+      component_image: 'Train_for_trade_creative_industries.png',
       component_name: 'Creative Industries',
       percentage: 60,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'Creative Economy Strategy',
       text_color: '#fff'
     }, {
-      component_color: 'rgba(226, 75, 58, 1)',
       component_bgcolor: 'rgba(226, 75, 58, 0.3)',
       component_bordercolor: 'rgba(226, 75, 58, 0.8)',
+      component_color: 'rgba(226, 75, 58, 1)',
+      component_image: 'Train_for_trade_empretec.png',
       component_name: 'EMPRETEC',
       percentage: 40,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'National Entrepreneurship Strategy',
       text_color: '#fff'
     }, {
-      component_color: 'rgba(96, 173, 208, 1)',
       component_bgcolor: 'rgba(96, 173, 208, 0.3)',
       component_bordercolor: 'rgba(96, 173, 208, 0.8)',
+      component_color: 'rgba(96, 173, 208, 1)',
+      component_image: 'Train_for_trade_investment.png',
       component_name: 'Investment (IPR)',
       percentage: 10,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'Institutional investment facilitation strategy',
       text_color: '#fff'
     }, {
-      component_color: 'rgba(96, 173, 208, 1)',
       component_bgcolor: 'rgba(96, 173, 208, 0.3)',
       component_bordercolor: 'rgba(96, 173, 208, 0.8)',
+      component_color: 'rgba(96, 173, 208, 1)',
+      component_image: 'Train_for_trade_investment.png',
       component_name: 'Investment (IPR)',
       percentage: 100,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'Investment Policy Review of Angola',
       text_color: '#fff'
     }, {
-      component_color: 'rgba(96, 173, 208, 1)',
       component_bgcolor: 'rgba(96, 173, 208, 0.3)',
       component_bordercolor: 'rgba(96, 173, 208, 0.8)',
+      component_color: 'rgba(96, 173, 208, 1)',
+      component_image: 'Train_for_trade_investment.png',
       component_name: 'Investment (IPR)',
       percentage: 100,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'Review of International Investment Agreements',
       text_color: '#fff'
     }, {
-      component_color: 'rgba(96, 173, 208, 1)',
       component_bgcolor: 'rgba(96, 173, 208, 0.3)',
       component_bordercolor: 'rgba(96, 173, 208, 0.8)',
+      component_color: 'rgba(96, 173, 208, 1)',
+      component_image: 'Train_for_trade_investment.png',
       component_name: 'Investment (IPR)',
       percentage: 50,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'Sustainable investment promotion strategy for agriculture',
       text_color: '#fff'
     }, {
-      component_color: 'rgba(125, 174, 88, 1)',
       component_bgcolor: 'rgba(125, 174, 88, 0.3)',
       component_bordercolor: 'rgba(125, 174, 88, 0.8)',
+      component_color: 'rgba(125, 174, 88, 1)',
+      component_image: 'Train_for_trade_national_green_export_review.png',
       component_name: 'National Green Export Review (NGER)',
       percentage: 40,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'Fisheries Export strategy',
       text_color: '#fff'
     }, {
-      component_color: 'rgba(125, 174, 88, 1)',
       component_bgcolor: 'rgba(125, 174, 88, 0.3)',
       component_bordercolor: 'rgba(125, 174, 88, 0.8)',
+      component_color: 'rgba(125, 174, 88, 1)',
+      component_image: 'Train_for_trade_national_green_export_review.png',
       component_name: 'National Green Export Review (NGER)',
       percentage: 40,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'Honey policy',
       text_color: '#fff'
     }, {
-      component_color: 'rgba(125, 174, 88, 1)',
       component_bgcolor: 'rgba(125, 174, 88, 0.3)',
       component_bordercolor: 'rgba(125, 174, 88, 0.8)',
+      component_color: 'rgba(125, 174, 88, 1)',
+      component_image: 'Train_for_trade_national_green_export_review.png',
       component_name: 'National Green Export Review (NGER)',
       percentage: 40,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'Honey residue monitoring plans',
       text_color: '#fff'
     }, {
-      component_color: 'rgba(15, 110, 157, 1)',
       component_bgcolor: 'rgba(15, 110, 157, 0.3)',
       component_bordercolor: 'rgba(15, 110, 157, 0.8)',
+      component_color: 'rgba(15, 110, 157, 1)',
+      component_image: 'Train_for_trade_trade_facilitation.png',
       component_name: 'Trade Facilitation',
       percentage: 40,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'National Trade Facilitation Strategy',
       text_color: '#fff'
     }, {
-      component_color: 'rgba(252, 213, 50, 1)',
       component_bgcolor: 'rgba(252, 213, 50, 0.3)',
       component_bordercolor: 'rgba(252, 213, 50, 0.8)',
+      component_color: 'rgba(252, 213, 50, 1)',
+      component_image: 'Train_for_trade_transport_logistics.png',
       component_name: 'Transport & Logistics',
       percentage: 10,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'Corridor review',
       text_color: '#000'
     }, {
-      component_color: 'rgba(252, 213, 50, 1)',
       component_bgcolor: 'rgba(252, 213, 50, 0.3)',
       component_bordercolor: 'rgba(252, 213, 50, 0.8)',
+      component_color: 'rgba(252, 213, 50, 1)',
+      component_image: 'Train_for_trade_transport_logistics.png',
       component_name: 'Transport & Logistics',
       percentage: 100,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
       policy_name: 'Public-Private Partnership Law',
       text_color: '#000'
     }, {
-      component_color: 'rgba(252, 213, 50, 1)',
       component_bgcolor: 'rgba(252, 213, 50, 0.3)',
       component_bordercolor: 'rgba(252, 213, 50, 0.8)',
+      component_color: 'rgba(252, 213, 50, 1)',
+      component_image: 'Train_for_trade_transport_logistics.png',
       component_name: 'Transport & Logistics',
       percentage: 100,
       policy_desc: 'Short description of the policy so people understand quickly what it is about',
@@ -177,7 +191,7 @@ function Policies() {
                 </div>
                 <div className="component_container">
                   <h4>
-                    <span className="component_indicator" style={{ backgroundColor: el.component_color }} />
+                    <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-train_for_trade_ii_angola/assets/img/${el.component_image}` : `./assets/img/${el.component_image}`} alt="" /></span>
                     <span className="component_label">Component</span>
                     <span className="component_name">{el.component_name}</span>
                   </h4>

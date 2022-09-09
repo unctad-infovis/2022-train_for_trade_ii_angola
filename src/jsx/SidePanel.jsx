@@ -30,7 +30,7 @@ function SidePanel() {
   const [educationCount, setEducationCount] = useState(0);
   const [ngoCount, setNGOCount] = useState(0);
 
-  const defineCurrentAppWidth = () => Math.min(appRef.current.offsetWidth, 300) - 60;
+  const defineCurrentAppWidth = () => Math.min(appRef.current.offsetWidth, 300) - 70;
 
   const easingFn = (t, b, c, d) => {
     const ts = (t /= d) * t;
@@ -68,10 +68,13 @@ function SidePanel() {
     document.querySelector(`${appID} .education .bar.current`).style.width = `${(educationCount / barMax) * width}px`;
 
     document.querySelector(`${appID} .ngo .bar.current`).style.width = `${(ngoCount / barMax) * width}px`;
-    setTimeout(() => {
-      document.querySelectorAll(`${appID} .change`).forEach(el => { el.style.opacity = 1; });
-    }, 2000);
-  }, [privateCount, publicCount, educationCount, ngoCount]);
+
+    if (barWidth > 180) {
+      setTimeout(() => {
+        document.querySelectorAll(`${appID} .change`).forEach(el => { el.style.opacity = 1; });
+      }, 2000);
+    }
+  }, [privateCount, publicCount, educationCount, ngoCount, barWidth]);
 
   const handleWindowResize = useCallback(() => {
     setBarWidth(defineCurrentAppWidth());
@@ -122,12 +125,12 @@ function SidePanel() {
       </div>
       <div className="genders_container">
         <div className="gender_container">
-          <div className="value">{maleCount.toLocaleString('en-EN')}</div>
-          <div className="label">Male</div>
+          <span className="value">{maleCount.toLocaleString('en-EN')}</span>
+          <span className="label">Male</span>
         </div>
         <div className="gender_container">
-          <div className="value">{femaleCount.toLocaleString('en-EN')}</div>
-          <div className="label">Female</div>
+          <span className="value">{femaleCount.toLocaleString('en-EN')}</span>
+          <span className="label">Female</span>
         </div>
       </div>
       <div className="targets_container">
@@ -135,7 +138,7 @@ function SidePanel() {
           <div className="title">Public sector</div>
           <div className="value_bar_wrapper">
             <div className="label">Goal</div>
-            <div className="value">
+            <div className="value goal">
               <div className="bar goal" data-width={publicTargetCount} />
               {publicTargetCount}
               {' '}
@@ -144,7 +147,7 @@ function SidePanel() {
           </div>
           <div className="value_bar_wrapper">
             <div className="label">Current</div>
-            <div className="value">
+            <div className="value current">
               <div className="bar current" data-width={publicCount}>
                 <div className="change">
                   +
@@ -162,14 +165,14 @@ function SidePanel() {
           <div className="title">Private sector</div>
           <div className="value_bar_wrapper">
             <div className="label">Goal</div>
-            <div className="value">
+            <div className="value goal">
               <div className="bar goal" data-width={privateTargetCount} />
               {privateTargetCount}
             </div>
           </div>
           <div className="value_bar_wrapper">
             <div className="label">Current</div>
-            <div className="value">
+            <div className="value current">
               <div className="bar current" data-width={privateCount}>
                 <div className="change">
                   +
@@ -185,7 +188,7 @@ function SidePanel() {
           <div className="title">Higher education institutions</div>
           <div className="value_bar_wrapper">
             <div className="label">Current</div>
-            <div className="value">
+            <div className="value current">
               <div className="bar current" data-width={educationCount} />
               {educationCount}
             </div>
@@ -195,7 +198,7 @@ function SidePanel() {
           <div className="title">NGOs</div>
           <div className="value_bar_wrapper">
             <div className="label">Current</div>
-            <div className="value">
+            <div className="value current">
               <div className="bar current" data-width={ngoCount} />
               {ngoCount}
             </div>

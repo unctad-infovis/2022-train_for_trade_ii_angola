@@ -2,21 +2,36 @@
 
 @import 'colors.less';
 
+.flex {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  @media all and (min-width: 992px) {
+    display: block;
+    #app-root-2022-train_for_trade_ii_angola_map {
+      float: right;
+      margin: 0 0 20px 20px;
+    }
+  }
+  @media all and (max-width: 991px) {
+    #app-root-2022-train_for_trade_ii_angola_map {
+      margin: 20px 0;
+    }
+  }
+}
 #app-root-2022-train_for_trade_ii_angola_map .app {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: auto auto;
   max-width: 400px;
-  @media all and (min-width: 700px) {
-    float: right;
-    margin: 0 0 20px 20px;
-  }
   h2 {
-    font-size: 32px;
+    font-size: 26px;
+    font-weight: 700;
     margin: auto auto 20px auto;
   }
   h3 {
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 700;
     margin: 0 0 10px 0;
   }
   .map_container {
@@ -38,6 +53,7 @@
         pointer-events: none;
         width: 80px;
         body {
+          background-color: transparent;
           display: table;
           height: 40px;
           width: 80px;
@@ -77,8 +93,9 @@
         .total_count {
           margin-bottom: 10px;
           .label {
+            color: #000;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: 0.02em;
             line-height: 24px;
             text-transform: uppercase;
@@ -94,7 +111,7 @@
         }
         h4 {
           font-size: 14px;
-          font-weight: 600;
+          font-weight: 700;
           letter-spacing: 0.02em;
           text-transform: uppercase;
         }
@@ -115,6 +132,9 @@
               height: 30px;
               width: 30px;
               min-width: 30px;
+              img {
+                width: 100%;
+              }
             }
             .compotent_name {
               flex-grow: 1;

@@ -8,28 +8,31 @@
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: auto auto;
   max-width: 300px;
-  padding: 40px 10px 40px 10px;
+  padding: 20px 5px 20px 5px;
   .total_container {
     max-width: 300px;
     margin: auto auto 20px auto;
-    text-align: center;
+    text-align: left;
     .value {
       color: #009edb;
       font-family: "Open Sans";
       font-size: 60px;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 60px;
     }
     .label {
       color: #000;
       font-size: 24px;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 24px;
+      padding: 0;
+      text-align: left;
+      white-space: normal;
     }
   }
   .genders_container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: auto auto 20px auto;
     max-width: 300px;
@@ -39,19 +42,27 @@
     transition-property: opacity;
     transition-timing-function: linear;
     .gender_container {
-      margin: 0 30px;
-      text-align: center;
+      // margin: 0 30px;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      text-align: left;
       width: 150px;
       .value {
         color: #009edb;
         font-family: "Open Sans";
         font-size: 36px;
-        font-weight: 600;
+        font-weight: 700;
         margin-bottom: 2px;
       }
       .label {
-        font-weight: 600;
+        color: #000;
         font-size: 24px;
+        font-weight: 700;
+        margin-left: 5px;
+        margin-top: 3px;
+        padding: 0;
+        white-space: normal;
       }
     }
   }
@@ -68,14 +79,14 @@
         font-size: 24px;
         font-weight: 400;
         margin-bottom: 10px;
-        text-align: center;
-        font-weight: 600;
+        text-align: left;
+        font-weight: 700;
       }
       .label {
         color: #000;
         display: inline-block;
-        font-size: 100%;
-        font-weight: 600;
+        font-size: 15px;
+        font-weight: 400;
         padding: 0;
         text-align: right;
         width: 55px;
@@ -88,12 +99,19 @@
           color: #fff;
           display: inline-block;
           font-family: "Open Sans";
-          height: 35px;
           font-size: 14px;
+          font-weight: 400;
+          height: 35px;
           letter-spacing: 0.02em;
           line-height: 30px;
           padding-left: 10px;
           text-align: left;
+          &.goal {
+            text-shadow: 1px 1px 1px #aea29a;
+          }
+          &.current {
+            text-shadow: 1px 1px 1px #009edb;
+          }
           .value_meta {
             font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 15px;
