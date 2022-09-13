@@ -115,7 +115,7 @@ function SidePanel() {
         <div className="value">
           <IsVisible once>
             {(isVisible) => (
-              <div style={{ height: 71, display: 'inline-block', width: 182 }}>
+              <div style={{ height: 55, display: 'inline-block', width: 182 }}>
                 {(isVisible && hasStarted === false && femaleCount > 0) ? <CountUp delay={1} end={(femaleCount + maleCount)} start={0} duration={3} useEasing easingFn={easingFn} onEnd={() => onCoutUpEnd()} onStart={onCoutUpStart} formattingFn={formatNr} /> : null}
               </div>
             )}
