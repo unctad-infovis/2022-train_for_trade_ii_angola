@@ -185,7 +185,7 @@ function SidePanel() {
           </div>
         </div>
         <div className="target_container education">
-          <div className="title">Higher education institutions</div>
+          <div className="title">Academia</div>
           <div className="value_bar_wrapper">
             <div className="label">Current</div>
             <div className="value current">
