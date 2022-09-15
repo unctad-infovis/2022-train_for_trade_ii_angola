@@ -17,13 +17,14 @@ import { geoRobinson } from 'd3-geo-projection';
 import * as topojson from 'topojson-client';
 
 // Load helpers.
+import { getData } from './helpers/GetData.js';
 // import formatNr from './helpers/FormatNr.js';
 // import roundNr from './helpers/RoundNr.js';
 
 // const appID = '#app-root-2022-train_for_trade_ii_angola_components';
 
 function AngolaMap() {
-  const names = useMemo(() => ['Bengo', 'Benguela', 'Bié', 'Cabinda', 'Cuando Cubango', 'Cuanza Norte', 'Cuanza Sul', 'Cunene', 'Huambo', 'Huíla', 'Luanda', 'Lunda Norte', 'Lunda Sul', 'Malanje', 'Moxico', 'Namibe', 'Uíge', 'Zaire'], []);
+  const names = useMemo(() => ['Bengo', 'Benguela', 'Bié', 'Cabinda', 'Kuando-Kubango', 'Kwanza-Norte', 'Kwanza-Sul', 'Cunene', 'Huambo', 'Huíla', 'Luanda', 'Lunda-Norte', 'Lunda-Sul', 'Malanje', 'Moxico', 'Namibe', 'Uíge', 'Zaire'], []);
 
   const componentMetaData = useMemo(() => ({
     'Commercial Diplomacy': {
@@ -56,79 +57,19 @@ function AngolaMap() {
     }
   }), []);
 
-  const componentData = useMemo(() => [{
-    components: ['National Green Export Review (NGER)'],
-    name: 'Bengo',
-    total_count: 7
-  }, {
-    components: ['Commercial Diplomacy', 'National Green Export Review (NGER)', 'Transport & Logistics'],
-    name: 'Benguela',
-    total_count: 9
-  }, {
-    components: ['Creative Industries', 'EMPRETEC', 'National Green Export Review (NGER)'],
-    name: 'Bié',
-    total_count: 34
-  }, {
-    components: ['National Green Export Review (NGER)'],
-    name: 'Cabinda',
-    total_count: 2
-  }, {
-    components: ['National Green Export Review (NGER)'],
-    name: 'Cuando Cubango',
-    total_count: 4
-  }, {
-    components: ['EMPRETEC', 'National Green Export Review (NGER)'],
-    name: 'Cuanza Norte',
-    total_count: 95
-  }, {
-    components: ['Commercial Diplomacy', 'Creative Industries', 'EMPRETEC', 'National Green Export Review (NGER)'],
-    name: 'Cuanza Sul',
-    total_count: 55
-  }, {
-    components: ['National Green Export Review (NGER)', 'EMPRETEC', 'Creative Industries'],
-    name: 'Cunene',
-    total_count: 18
-  }, {
-    components: ['Commercial Diplomacy', 'EMPRETEC', 'National Green Export Review (NGER)'],
-    name: 'Huambo',
-    total_count: 204
-  }, {
-    components: ['Creative Industries', 'EMPRETEC', 'National Green Export Review (NGER)', 'Trade Facilitation', 'Transport & Logistics'],
-    name: 'Huíla',
-    total_count: 175
-  }, {
-    components: ['Commercial Diplomacy', 'Creative Industries', 'EMPRETEC', 'Investment (IPR)', 'National Green Export Review (NGER)', 'Trade Facilitation', 'Transport & Logistics'],
-    name: 'Luanda',
-    total_count: 849
-  }, {
-    components: ['National Green Export Review (NGER)'],
-    name: 'Lunda Norte',
-    total_count: 1
-  }, {
-    components: ['Commercial Diplomacy', 'National Green Export Review (NGER)'],
-    name: 'Lunda Sul',
-    total_count: 6
-  }, {
-    components: ['EMPRETEC', 'National Green Export Review (NGER)', 'Transport & Logistics'],
-    name: 'Malanje',
-    total_count: 27
-  }, {
-    components: ['Commercial Diplomacy', 'EMPRETEC', 'National Green Export Review (NGER)', 'Transport & Logistics'],
-    name: 'Moxico',
-    total_count: 58
-  }, {
-    components: ['Commercial Diplomacy', 'EMPRETEC'],
-    name: 'Namibe',
-    total_count: 11
-  }, {
-    components: ['National Green Export Review (NGER)'],
-    name: 'Uíge',
-    total_count: 185
-  }, {
-    components: ['Commercial Diplomacy', 'National Green Export Review (NGER)', 'EMPRETEC'],
-    name: 'Zaire',
-    total_count: 60
-  }], []);
+  const componentData = useMemo(() => [], []);
+
+  useEffect(() => {
+    getData().then(data => {
+      for (let i = 23; i <= 40; i++) {
+        componentData.push({
+          components: data[i].components.split(';'),
+          name: data[i].name,
+          total_count: parseInt(data[i].value, 10)
+        });
+      }
+    });
+  }, [componentData]);
 
   const [selectedArea, setSelectedArea] = useState('');
   const [areaComponentCount, setAreaComponentCount] = useState('');
@@ -201,9 +142,9 @@ function AngolaMap() {
         if (names[i] === 'Bengo') {
           return d[1] - 50;
         }
-        return d[1] - 20;
+        return d[1] - 25;
       })
-      .attr('height', 40)
+      .attr('height', 50)
       .attr('width', 80)
       .append('xhtml:body')
       .attr('xmlns', 'http://www.w3.org/1999/xhtml')

@@ -74,6 +74,8 @@ module.exports = {
       patterns: [
         { from: 'assets/img/', to: '../public/assets/img/', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'],
           }},
+        { from: 'assets/data/train_for_trade_ii_angola - data.csv', to: '../public/assets/data/train_for_trade_ii_angola - data.csv', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'],
+          }},
         { from: 'assets/data/angola_map.topojson', to: '../public/assets/data/angola_map.topojson', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'],
           }},
         { from: 'src/font/', to: '../public/font/', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'],

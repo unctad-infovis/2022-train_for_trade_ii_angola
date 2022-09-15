@@ -10,6 +10,7 @@ import IsVisible from 'react-is-visible';
 import CountUp from 'react-countup';
 
 // Load helpers.
+import { getData } from './helpers/GetData.js';
 import formatNr from './helpers/FormatNr.js';
 // import roundNr from './helpers/RoundNr.js';
 
@@ -27,7 +28,7 @@ function SidePanel() {
   const [maleCount, setMaleCount] = useState(0);
   const [publicCount, setPublicCount] = useState(0);
   const [privateCount, setPrivateCount] = useState(0);
-  const [educationCount, setEducationCount] = useState(0);
+  const [academiaCount, setAcademiaCount] = useState(0);
   const [ngoCount, setNGOCount] = useState(0);
 
   const defineCurrentAppWidth = () => Math.min(appRef.current.offsetWidth, 300) - 70;
@@ -43,12 +44,15 @@ function SidePanel() {
 
   useEffect(() => {
     setBarWidth(defineCurrentAppWidth());
-    setFemaleCount(617);
-    setMaleCount(1489);
-    setPublicCount(1044);
-    setPrivateCount(835);
-    setEducationCount(160);
-    setNGOCount(145);
+    getData().then(data => {
+      console.log(data);
+      setMaleCount(parseInt(data[0].value, 10));
+      setFemaleCount(parseInt(data[1].value, 10));
+      setPublicCount(parseInt(data[3].value, 10));
+      setPrivateCount(parseInt(data[4].value, 10));
+      setAcademiaCount(parseInt(data[5].value, 10));
+      setNGOCount(parseInt(data[6].value, 10));
+    });
   }, []);
 
   useEffect(() => {
@@ -56,7 +60,7 @@ function SidePanel() {
   }, [barWidth]);
 
   const showTargets = useCallback(() => {
-    const barMax = Math.ceil(Math.max(publicCount, privateCount, educationCount, ngoCount) / 10) * 10;
+    const barMax = Math.ceil(Math.max(publicCount, privateCount, academiaCount, ngoCount) / 10) * 10;
     document.querySelector(`${appID} .targets_container`).style.opacity = 1;
 
     document.querySelector(`${appID} .public .bar.goal`).style.width = `${(publicTargetCount / barMax) * width}px`;
@@ -65,7 +69,7 @@ function SidePanel() {
     document.querySelector(`${appID} .private .bar.goal`).style.width = `${(privateTargetCount / barMax) * width}px`;
     document.querySelector(`${appID} .private .bar.current`).style.width = `${(privateCount / barMax) * width}px`;
 
-    document.querySelector(`${appID} .education .bar.current`).style.width = `${(educationCount / barMax) * width}px`;
+    document.querySelector(`${appID} .education .bar.current`).style.width = `${(academiaCount / barMax) * width}px`;
 
     document.querySelector(`${appID} .ngo .bar.current`).style.width = `${(ngoCount / barMax) * width}px`;
 
@@ -74,7 +78,7 @@ function SidePanel() {
         document.querySelectorAll(`${appID} .change`).forEach(el => { el.style.opacity = 1; });
       }, 2000);
     }
-  }, [privateCount, publicCount, educationCount, ngoCount, barWidth]);
+  }, [privateCount, publicCount, academiaCount, ngoCount, barWidth]);
 
   const handleWindowResize = useCallback(() => {
     setBarWidth(defineCurrentAppWidth());
@@ -189,13 +193,13 @@ function SidePanel() {
           <div className="value_bar_wrapper">
             <div className="label">Current</div>
             <div className="value current">
-              <div className="bar current" data-width={educationCount} />
-              {educationCount}
+              <div className="bar current" data-width={academiaCount} />
+              {academiaCount}
             </div>
           </div>
         </div>
         <div className="target_container ngo">
-          <div className="title">NGOs</div>
+          <div className="title">NGO</div>
           <div className="value_bar_wrapper">
             <div className="label">Current</div>
             <div className="value current">
