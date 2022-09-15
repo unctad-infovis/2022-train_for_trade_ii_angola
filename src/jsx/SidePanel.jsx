@@ -45,7 +45,6 @@ function SidePanel() {
   useEffect(() => {
     setBarWidth(defineCurrentAppWidth());
     getData().then(data => {
-      console.log(data);
       setMaleCount(parseInt(data[0].value, 10));
       setFemaleCount(parseInt(data[1].value, 10));
       setPublicCount(parseInt(data[3].value, 10));
