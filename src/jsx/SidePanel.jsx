@@ -30,6 +30,7 @@ function SidePanel() {
   const [privateCount, setPrivateCount] = useState(0);
   const [academiaCount, setAcademiaCount] = useState(0);
   const [ngoCount, setNGOCount] = useState(0);
+  const [updated, setUpdated] = useState('');
 
   const defineCurrentAppWidth = () => Math.min(appRef.current.offsetWidth, 300) - 70;
 
@@ -45,12 +46,14 @@ function SidePanel() {
   useEffect(() => {
     setBarWidth(defineCurrentAppWidth());
     getData().then(data => {
+      const d = new Date(data[42].value);
       setMaleCount(parseInt(data[0].value, 10));
       setFemaleCount(parseInt(data[1].value, 10));
       setPublicCount(parseInt(data[3].value, 10));
       setPrivateCount(parseInt(data[4].value, 10));
       setAcademiaCount(parseInt(data[5].value, 10));
       setNGOCount(parseInt(data[6].value, 10));
+      setUpdated(d.toDateString());
     });
   }, []);
 
@@ -207,6 +210,11 @@ function SidePanel() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="updated">
+        <span className="label">Data updated:</span>
+        {' '}
+        <span className="value">{updated}</span>
       </div>
       <noscript>Your browser does not support JavaScript!</noscript>
     </div>
