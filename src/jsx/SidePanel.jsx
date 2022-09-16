@@ -46,13 +46,13 @@ function SidePanel() {
   useEffect(() => {
     setBarWidth(defineCurrentAppWidth());
     getData().then(data => {
-      const d = new Date(data[42].value);
       setMaleCount(parseInt(data[0].value, 10));
       setFemaleCount(parseInt(data[1].value, 10));
       setPublicCount(parseInt(data[3].value, 10));
       setPrivateCount(parseInt(data[4].value, 10));
       setAcademiaCount(parseInt(data[5].value, 10));
       setNGOCount(parseInt(data[6].value, 10));
+      const d = new Date(data[43].value);
       setUpdated(d.toDateString());
     });
   }, []);

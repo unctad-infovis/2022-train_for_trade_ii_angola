@@ -1,6 +1,6 @@
 name,value,components,number of components (automated)
 Male,1516,,
-Female,644,,
+Female,645,,
 ,,,
 Public,1093,,
 Private,840,,
@@ -16,7 +16,7 @@ Review of International Investment Agreements,100,,
 Sustainable investment promotion strategy for agriculture,50,,
 Fisheries Export strategy,40,,
 Honey policy,40,,
-Honey residue monitoring plans,40,,
+Honey residue monitoring plan,40,,
 National Trade Facilitation Strategy,40,,
 Corridor review,10,,
 Public-Private Partnership Law,100,,
@@ -24,21 +24,22 @@ Public-Private Partnership decree,100,,
 ,,,
 Bengo,7,National Green Export Review (NGER),1
 Benguela,24,Commercial Diplomacy;National Green Export Review (NGER);Transport & Logistics,3
-Bié,34,Creative Industries;EMPRETEC;National Green Export Review (NGER),3
+Bié,34,Creative Economy;EMPRETEC;National Green Export Review (NGER),3
 Cabinda,3,Commercial Diplomacy;National Green Export Review (NGER),2
-Cunene,18,National Green Export Review (NGER);EMPRETEC;Creative Industries,3
+Cunene,18,Creative Economy;EMPRETEC;National Green Export Review (NGER),3
 Huambo,110,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
-Huíla,80,Creative Industries;EMPRETEC;National Green Export Review (NGER);Trade Facilitation;Transport & Logistics,5
+Huíla,80,Creative Economy;EMPRETEC;National Green Export Review (NGER);Investment (IPR);Transport & Logistics,5
 Kuando-Kubango,4,National Green Export Review (NGER),1
 Kwanza-Norte,28,EMPRETEC;National Green Export Review (NGER),2
-Kwanza-Sul,55,Commercial Diplomacy;Creative Industries;EMPRETEC;National Green Export Review (NGER),4
-Luanda,970,Commercial Diplomacy;Creative Industries;EMPRETEC;Investment (IPR);National Green Export Review (NGER);Trade Facilitation;Transport & Logistics,7
+Kwanza-Sul,55,Commercial Diplomacy;Creative Economy;EMPRETEC;National Green Export Review (NGER),4
+Luanda,1017,Commercial Diplomacy;Creative Economy;EMPRETEC;Investment (IPR);National Green Export Review (NGER);Trade Facilitation;Transport & Logistics,7
 Lunda Norte,1,National Green Export Review (NGER),1
-Lunda Sul,5,Commercial Diplomacy;National Green Export Review (NGER),2
-Malanje,31,EMPRETEC;National Green Export Review (NGER);Transport & Logistics,3
-Moxico,59,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER);Transport & Logistics,4
+Lunda Sul,6,Commercial Diplomacy;National Green Export Review (NGER),2
+Malanje,31,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
+Missões diplomáticas de Angola,6,Commercial Diplomacy;Creative Economy;Investment (IPR);National Green Export Review (NGER);Transport & Logistics,5
+Moxico,59,Commercial Diplomacy;EMPRETEC;Investment (IPR);National Green Export Review (NGER);Transport & Logistics,5
 Namibe,14,Commercial Diplomacy;EMPRETEC;Transport & Logistics,3
 Uíge,187,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
-Zaire,5,Creative Industries;Commercial Diplomacy;EMPRETEC;Transport & Logistics,4
+Zaire,5,Creative Economy;Commercial Diplomacy;EMPRETEC;Transport & Logistics,4
 ,,,
-Updated,2022-09-15 9:00,,
+Updated,9/15/22 15:35,,
