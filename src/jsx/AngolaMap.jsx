@@ -31,7 +31,7 @@ function AngolaMap() {
       color: 'rgba(155, 56, 115, 1)',
       component_image: 'Train_for_trade_commercial_diplomacy.png'
     },
-    'Creative Industries': {
+    'Creative Economy': {
       color: 'rgba(238, 154, 59, 1)',
       component_image: 'Train_for_trade_creative_industries.png'
     },
@@ -166,7 +166,7 @@ function AngolaMap() {
 
   return (
     <div className="app">
-      <h2>Program reach per province</h2>
+      <h2>Programme reach per province</h2>
       <div className="map_container">
         <div className="area_information_container">
           <div className="area_information_content">
@@ -189,7 +189,7 @@ function AngolaMap() {
           </div>
         </div>
       </div>
-      <h3 className="hint">Select a area of interest from the map above</h3>
+      <h3 className="hint">Select province of interest from the map above</h3>
       <noscript>Your browser does not support JavaScript!</noscript>
     </div>
   );

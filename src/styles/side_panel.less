@@ -96,25 +96,27 @@
         width: 100%;
         z-index: 2;
         .value {
-          color: #fff;
+          color: #000;
           display: inline-block;
           font-family: "Open Sans";
           font-size: 14px;
           font-weight: 400;
           height: 35px;
           letter-spacing: 0.02em;
+          letter-spacing: 0.05em;
           line-height: 30px;
           padding-left: 10px;
           text-align: left;
           &.goal {
-            text-shadow: 1px 1px 1px #aea29a;
+            // text-shadow: 1px 1px 1px #aea29a;
           }
           &.current {
-            text-shadow: 1px 1px 1px #009edb;
+            // text-shadow: 1px 1px 1px #009edb;
           }
           .value_meta {
             font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 15px;
+            letter-spacing: 0;
           }
           .bar {
             height: 30px;
@@ -127,10 +129,10 @@
             width: 0;
             z-index: -1;
             &.goal {
-              background-color: #aea29a;
+              background-color: rgba(174, 162, 154, 0.7);
             }
             &.current {
-              background-color: #009edb;
+              background-color: rgba(0, 158, 219, 0.7);
             }
           }
           .change {
@@ -159,12 +161,15 @@
   }
   .updated {
     .label {
+      color: #000;
       font-size: 12px;
       font-weight: 400;
+      padding: 0;
     }
     .value {
       font-size: 12px;
       font-weight: 700;
+      white-space: nowrap;
     }
   }
 }

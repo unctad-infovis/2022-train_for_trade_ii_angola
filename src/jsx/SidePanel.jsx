@@ -16,13 +16,11 @@ import formatNr from './helpers/FormatNr.js';
 
 const appID = '#app-root-2022-train_for_trade_ii_angola_side_panel';
 
-let width = 0;
-
 function SidePanel() {
   let hasStarted = false;
-  let barsDrawn = false;
 
   const appRef = useRef(null);
+  const [barsDrawn, setBarsDrawn] = useState(false);
   const [barWidth, setBarWidth] = useState(0);
   const [femaleCount, setFemaleCount] = useState(0);
   const [maleCount, setMaleCount] = useState(0);
@@ -57,29 +55,27 @@ function SidePanel() {
     });
   }, []);
 
-  useEffect(() => {
-    width = barWidth;
-  }, [barWidth]);
+  // useEffect(() => {
+  //   width = barWidth;
+  // }, [barWidth]);
 
   const showTargets = useCallback(() => {
     const barMax = Math.ceil(Math.max(publicCount, privateCount, academiaCount, ngoCount) / 10) * 10;
     document.querySelector(`${appID} .targets_container`).style.opacity = 1;
 
-    document.querySelector(`${appID} .public .bar.goal`).style.width = `${(publicTargetCount / barMax) * width}px`;
-    document.querySelector(`${appID} .public .bar.current`).style.width = `${(publicCount / barMax) * width}px`;
+    document.querySelector(`${appID} .public .bar.goal`).style.width = `${(publicTargetCount / barMax) * barWidth}px`;
+    document.querySelector(`${appID} .public .bar.current`).style.width = `${(publicCount / barMax) * barWidth}px`;
 
-    document.querySelector(`${appID} .private .bar.goal`).style.width = `${(privateTargetCount / barMax) * width}px`;
-    document.querySelector(`${appID} .private .bar.current`).style.width = `${(privateCount / barMax) * width}px`;
+    document.querySelector(`${appID} .private .bar.goal`).style.width = `${(privateTargetCount / barMax) * barWidth}px`;
+    document.querySelector(`${appID} .private .bar.current`).style.width = `${(privateCount / barMax) * barWidth}px`;
 
-    document.querySelector(`${appID} .education .bar.current`).style.width = `${(academiaCount / barMax) * width}px`;
+    document.querySelector(`${appID} .education .bar.current`).style.width = `${(academiaCount / barMax) * barWidth}px`;
 
-    document.querySelector(`${appID} .ngo .bar.current`).style.width = `${(ngoCount / barMax) * width}px`;
+    document.querySelector(`${appID} .ngo .bar.current`).style.width = `${(ngoCount / barMax) * barWidth}px`;
 
-    if (barWidth > 180) {
-      setTimeout(() => {
-        document.querySelectorAll(`${appID} .change`).forEach(el => { el.style.opacity = 1; });
-      }, 2000);
-    }
+    setTimeout(() => {
+      document.querySelectorAll(`${appID} .change`).forEach(el => { el.style.opacity = 1; });
+    }, 2000);
   }, [privateCount, publicCount, academiaCount, ngoCount, barWidth]);
 
   const handleWindowResize = useCallback(() => {
@@ -106,7 +102,7 @@ function SidePanel() {
       showGenders();
     }, 200);
     setTimeout(() => {
-      barsDrawn = true;
+      setBarsDrawn(true);
       showTargets();
     }, 1500);
   };
@@ -155,7 +151,7 @@ function SidePanel() {
             <div className="label">Current</div>
             <div className="value current">
               <div className="bar current" data-width={publicCount}>
-                <div className="change">
+                <div className="change" style={(barWidth > 180) ? { display: 'block' } : { display: 'none' }}>
                   +
                   {parseInt((publicCount / publicTargetCount) * 100, 10)}
                   <span className="change_unit">%</span>
@@ -180,7 +176,7 @@ function SidePanel() {
             <div className="label">Current</div>
             <div className="value current">
               <div className="bar current" data-width={privateCount}>
-                <div className="change">
+                <div className="change" style={(barWidth > 180) ? { display: 'block' } : { display: 'none' }}>
                   +
                   {parseInt((privateCount / privateTargetCount) * 100, 10)}
                   <span className="change_unit">%</span>
