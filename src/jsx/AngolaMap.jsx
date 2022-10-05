@@ -1,5 +1,5 @@
 import React, {
-  useEffect, useCallback, useMemo, useState
+  useEffect, useCallback, useMemo, useState, useRef
 } from 'react';
 import '../styles/angola_map.less';
 
@@ -24,6 +24,8 @@ import { getData } from './helpers/GetData.js';
 // const appID = '#app-root-2022-train_for_trade_ii_angola_components';
 
 function AngolaMap() {
+  const appRef = useRef();
+
   const names = useMemo(() => ['Bengo', 'Benguela', 'Bié', 'Cabinda', 'Kuando-Kubango', 'Kwanza-Norte', 'Kwanza-Sul', 'Cunene', 'Huambo', 'Huíla', 'Luanda', 'Lunda-Norte', 'Lunda-Sul', 'Malanje', 'Moxico', 'Namibe', 'Uíge', 'Zaire'], []);
 
   const componentMetaData = useMemo(() => ({
@@ -79,14 +81,14 @@ function AngolaMap() {
     setSelectedArea(area_name);
     setAreaComponentCount(componentData[event.target.id].total_count);
     setAreaComponents(componentData[event.target.id].components);
-    document.querySelector('.hint').style.visibility = 'hidden';
-    document.querySelector('.area_information_container').style.display = 'inline-block';
-    document.querySelector('.area_information_container').style.opacity = 1;
+    appRef.current.querySelector('.hint').style.visibility = 'hidden';
+    appRef.current.querySelector('.area_information_container').style.display = 'inline-block';
+    appRef.current.querySelector('.area_information_container').style.opacity = 1;
   }, [names, componentData]);
 
   const hideData = () => {
-    document.querySelector('.area_information_container').style.display = 'none';
-    document.querySelector('.area_information_container').style.opacity = 0;
+    appRef.current.querySelector('.area_information_container').style.display = 'none';
+    appRef.current.querySelector('.area_information_container').style.opacity = 0;
   };
 
   const drawMap = useCallback((data) => {
@@ -165,7 +167,7 @@ function AngolaMap() {
   }, [loadMapData]);
 
   return (
-    <div className="app">
+    <div className="app" ref={appRef}>
       <h2>Programme reach per province</h2>
       <div className="map_container">
         <div className="area_information_container">
