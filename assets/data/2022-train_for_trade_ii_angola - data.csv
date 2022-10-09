@@ -1,8 +1,8 @@
 name,value,components,number of components (automated)
-Male,1516,,
-Female,645,,
+Male,1525,,
+Female,653,,
 ,,,
-Public,1093,,
+Public,1110,,
 Private,840,,
 Academia,117,,
 NGO,71,,
@@ -23,7 +23,7 @@ Public-Private Partnership Law,100,,
 Public-Private Partnership decree,100,,
 ,,,
 Bengo,7,National Green Export Review (NGER),1
-Benguela,24,Commercial Diplomacy;National Green Export Review (NGER);Transport & Logistics,3
+Benguela,30,Commercial Diplomacy;National Green Export Review (NGER);Transport & Logistics,3
 Bié,34,Creative Economy;EMPRETEC;National Green Export Review (NGER),3
 Cabinda,3,Commercial Diplomacy;National Green Export Review (NGER),2
 Cunene,18,Creative Economy;EMPRETEC;National Green Export Review (NGER),3
@@ -32,14 +32,14 @@ Huíla,80,Creative Economy;EMPRETEC;National Green Export Review (NGER);Investme
 Kuando-Kubango,4,National Green Export Review (NGER),1
 Kwanza-Norte,28,EMPRETEC;National Green Export Review (NGER),2
 Kwanza-Sul,55,Commercial Diplomacy;Creative Economy;EMPRETEC;National Green Export Review (NGER),4
-Luanda,1017,Commercial Diplomacy;Creative Economy;EMPRETEC;Investment (IPR);National Green Export Review (NGER);Trade Facilitation;Transport & Logistics,7
-Lunda Norte,1,National Green Export Review (NGER),1
+Luanda,1027,Commercial Diplomacy;Creative Economy;EMPRETEC;Investment (IPR);National Green Export Review (NGER);Trade Facilitation;Transport & Logistics,7
+Lunda Norte,2,National Green Export Review (NGER),1
 Lunda Sul,6,Commercial Diplomacy;National Green Export Review (NGER),2
 Malanje,31,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
 Missões diplomáticas de Angola,6,Commercial Diplomacy;Creative Economy;Investment (IPR);National Green Export Review (NGER);Transport & Logistics,5
 Moxico,59,Commercial Diplomacy;EMPRETEC;Investment (IPR);National Green Export Review (NGER);Transport & Logistics,5
 Namibe,14,Commercial Diplomacy;EMPRETEC;Transport & Logistics,3
 Uíge,187,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
-Zaire,5,Creative Economy;Commercial Diplomacy;EMPRETEC;Transport & Logistics,4
+Zaire,6,Creative Economy;Commercial Diplomacy;EMPRETEC;Transport & Logistics,4
 ,,,
-Updated,9/15/22 15:35,,
+Updated,10/7/22 14:10,,
