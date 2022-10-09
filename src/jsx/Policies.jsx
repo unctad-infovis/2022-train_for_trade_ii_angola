@@ -10,7 +10,7 @@ import { getData } from './helpers/GetData.js';
 // import formatNr from './helpers/FormatNr.js';
 // import roundNr from './helpers/RoundNr.js';
 
-// const appID = '#app-root-2022-train_for_trade_ii_angola_components';
+// const appID = '#app-root-2022-2022-train_for_trade_ii_angola_ii_angola_components';
 
 function Policies() {
   const [data, setData] = useState(false);
@@ -25,7 +25,7 @@ function Policies() {
         component_bgcolor: 'rgba(155, 56, 115, 0.3)',
         component_bordercolor: 'rgba(155, 56, 115, 0.8)',
         component_color: 'rgba(155, 56, 115, 1)',
-        component_image: 'Train_for_trade_commercial_diplomacy.png',
+        component_image: '2022-train_for_trade_ii_angola_commercial_diplomacy.png',
         component_name: 'Commercial Diplomacy',
         percentage: percentages[0],
         policy_desc: 'Support for Angola’s trade policy development and trade negotiations through the establishment of a robust analytical base, improved capacities to analyse the country’s economic fundaments and trade policy needs, as well as better negotiating skills.',
@@ -35,17 +35,17 @@ function Policies() {
         component_bgcolor: 'rgba(238, 154, 59, 0.3)',
         component_bordercolor: 'rgba(238, 154, 59, 0.8)',
         component_color: 'rgba(238, 154, 59, 1)',
-        component_image: 'Train_for_trade_creative_industries.png',
+        component_image: '2022-train_for_trade_ii_angola_creative_industries.png',
         component_name: 'Creative Economy',
         percentage: percentages[1],
-        policy_desc: 'Establishment of a robust analytical base to facilitate the development of a Cultural and Creative Industries framework for Angola.',
+        policy_desc: 'Establishment of a robust analytical base to facilitate the assessment and development of cultural and creative industries in Angola.',
         policy_name: 'Creative Economy Strategy',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(226, 75, 58, 0.3)',
         component_bordercolor: 'rgba(226, 75, 58, 0.8)',
         component_color: 'rgba(226, 75, 58, 1)',
-        component_image: 'Train_for_trade_empretec.png',
+        component_image: '2022-train_for_trade_ii_angola_empretec.png',
         component_name: 'EMPRETEC',
         percentage: percentages[2],
         policy_desc: 'Institutional and analytical support for the development of a national entrepreneurship policy for Working Group leads.',
@@ -55,7 +55,7 @@ function Policies() {
         component_bgcolor: 'rgba(96, 173, 208, 0.3)',
         component_bordercolor: 'rgba(96, 173, 208, 0.8)',
         component_color: 'rgba(96, 173, 208, 1)',
-        component_image: 'Train_for_trade_investment.png',
+        component_image: '2022-train_for_trade_ii_angola_investment.png',
         component_name: 'Investment (IPR)',
         percentage: percentages[3],
         policy_desc: 'Strategic study and advisory services on an institutional investment facilitation strategy to target SDG sectors in Angola.',
@@ -65,7 +65,7 @@ function Policies() {
         component_bgcolor: 'rgba(96, 173, 208, 0.3)',
         component_bordercolor: 'rgba(96, 173, 208, 0.8)',
         component_color: 'rgba(96, 173, 208, 1)',
-        component_image: 'Train_for_trade_investment.png',
+        component_image: '2022-train_for_trade_ii_angola_investment.png',
         component_name: 'Investment (IPR)',
         percentage: percentages[4],
         policy_desc: 'Comprehensive review of policies and legal frameworks relevant to investment in Angola, including detailed and concrete recommendations with a view to improving Angola’s business climate to attract sustainable investment.',
@@ -75,7 +75,7 @@ function Policies() {
         component_bgcolor: 'rgba(96, 173, 208, 0.3)',
         component_bordercolor: 'rgba(96, 173, 208, 0.8)',
         component_color: 'rgba(96, 173, 208, 1)',
-        component_image: 'Train_for_trade_investment.png',
+        component_image: '2022-train_for_trade_ii_angola_investment.png',
         component_name: 'Investment (IPR)',
         percentage: percentages[5],
         policy_desc: 'Comprehensive review of Angola\'s current bilateral and plurilateral investment treaties, including detailed and concrete recommendations with a view to improving future treaties and possibly reforming existing ones.',
@@ -85,7 +85,7 @@ function Policies() {
         component_bgcolor: 'rgba(96, 173, 208, 0.3)',
         component_bordercolor: 'rgba(96, 173, 208, 0.8)',
         component_color: 'rgba(96, 173, 208, 1)',
-        component_image: 'Train_for_trade_investment.png',
+        component_image: '2022-train_for_trade_ii_angola_investment.png',
         component_name: 'Investment (IPR)',
         percentage: percentages[6],
         policy_desc: 'Support to promoting sustainable investment in agribusiness and development of an investment promotion strategy based on concrete tools and assistance in their utilization (pilot focus on the tropical fruit and fertilizer sectors).',
@@ -95,7 +95,7 @@ function Policies() {
         component_bgcolor: 'rgba(125, 174, 88, 0.3)',
         component_bordercolor: 'rgba(125, 174, 88, 0.8)',
         component_color: 'rgba(125, 174, 88, 1)',
-        component_image: 'Train_for_trade_national_green_export_review.png',
+        component_image: '2022-train_for_trade_ii_angola_national_green_export_review.png',
         component_name: 'National Green Export Review (NGER)',
         percentage: percentages[7],
         policy_desc: 'Support to the development of a National Fisheries Export Strategy based on focused analysis of gaps and improvements needed to address them vis-à-vis target markets’ regulations and standards.',
@@ -105,7 +105,7 @@ function Policies() {
         component_bgcolor: 'rgba(125, 174, 88, 0.3)',
         component_bordercolor: 'rgba(125, 174, 88, 0.8)',
         component_color: 'rgba(125, 174, 88, 1)',
-        component_image: 'Train_for_trade_national_green_export_review.png',
+        component_image: '2022-train_for_trade_ii_angola_national_green_export_review.png',
         component_name: 'National Green Export Review (NGER)',
         percentage: percentages[8],
         policy_desc: 'Support for the development of the National Honey Policy to support the sector’s upgrading, value chain development and exports.',
@@ -115,7 +115,7 @@ function Policies() {
         component_bgcolor: 'rgba(125, 174, 88, 0.3)',
         component_bordercolor: 'rgba(125, 174, 88, 0.8)',
         component_color: 'rgba(125, 174, 88, 1)',
-        component_image: 'Train_for_trade_national_green_export_review.png',
+        component_image: '2022-train_for_trade_ii_angola_national_green_export_review.png',
         component_name: 'National Green Export Review (NGER)',
         percentage: percentages[9],
         policy_desc: 'Support national stakeholders with the elaboration of a National Honey Residues Monitoring Plan to enable Angola to meet international SPS and quality standards for honey and derived products.',
@@ -125,7 +125,7 @@ function Policies() {
         component_bgcolor: 'rgba(15, 110, 157, 0.3)',
         component_bordercolor: 'rgba(15, 110, 157, 0.8)',
         component_color: 'rgba(15, 110, 157, 1)',
-        component_image: 'Train_for_trade_trade_facilitation.png',
+        component_image: '2022-train_for_trade_ii_angola_trade_facilitation.png',
         component_name: 'Trade Facilitation',
         percentage: percentages[10],
         policy_desc: 'Support to the development of a National Trade Facilitation Strategy through a multiple-module training program, to promote more transparent and fluid trade.',
@@ -135,7 +135,7 @@ function Policies() {
         component_bgcolor: 'rgba(252, 213, 50, 0.3)',
         component_bordercolor: 'rgba(252, 213, 50, 0.8)',
         component_color: 'rgba(252, 213, 50, 1)',
-        component_image: 'Train_for_trade_transport_logistics.png',
+        component_image: '2022-train_for_trade_ii_angola_transport_logistics.png',
         component_name: 'Transport & Logistics',
         percentage: percentages[11],
         policy_desc: 'Comprehensive review assessing the performance of key transport corridors in Angola.',
@@ -145,7 +145,7 @@ function Policies() {
         component_bgcolor: 'rgba(252, 213, 50, 0.3)',
         component_bordercolor: 'rgba(252, 213, 50, 0.8)',
         component_color: 'rgba(252, 213, 50, 1)',
-        component_image: 'Train_for_trade_transport_logistics.png',
+        component_image: '2022-train_for_trade_ii_angola_transport_logistics.png',
         component_name: 'Transport & Logistics',
         percentage: percentages[12],
         policy_desc: 'Technical support to the development of the PPP law.',
@@ -155,7 +155,7 @@ function Policies() {
         component_bgcolor: 'rgba(252, 213, 50, 0.3)',
         component_bordercolor: 'rgba(252, 213, 50, 0.8)',
         component_color: 'rgba(252, 213, 50, 1)',
-        component_image: 'Train_for_trade_transport_logistics.png',
+        component_image: '2022-train_for_trade_ii_angola_transport_logistics.png',
         component_name: 'Transport & Logistics',
         percentage: percentages[13],
         policy_desc: 'Technical support to the development of the PPP Decree.',
@@ -198,7 +198,7 @@ function Policies() {
                 </div>
                 <div className="component_container">
                   <h4>
-                    <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-train_for_trade_ii_angola/assets/img/${el.component_image}` : `./assets/img/${el.component_image}`} alt="" /></span>
+                    <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-2022-train_for_trade_ii_angola_ii_angola/assets/img/${el.component_image}` : `./assets/img/${el.component_image}`} alt="" /></span>
                     <span className="component_label">Component</span>
                     <span className="component_name">{el.component_name}</span>
                   </h4>

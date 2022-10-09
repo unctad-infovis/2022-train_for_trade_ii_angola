@@ -21,7 +21,7 @@ import { getData } from './helpers/GetData.js';
 // import formatNr from './helpers/FormatNr.js';
 // import roundNr from './helpers/RoundNr.js';
 
-// const appID = '#app-root-2022-train_for_trade_ii_angola_components';
+// const appID = '#app-root-2022-2022-train_for_trade_ii_angola_ii_angola_components';
 
 function AngolaMap() {
   const appRef = useRef();
@@ -31,31 +31,31 @@ function AngolaMap() {
   const componentMetaData = useMemo(() => ({
     'Commercial Diplomacy': {
       color: 'rgba(155, 56, 115, 1)',
-      component_image: 'Train_for_trade_commercial_diplomacy.png'
+      component_image: '2022-train_for_trade_ii_angola_commercial_diplomacy.png'
     },
     'Creative Economy': {
       color: 'rgba(238, 154, 59, 1)',
-      component_image: 'Train_for_trade_creative_industries.png'
+      component_image: '2022-train_for_trade_ii_angola_creative_industries.png'
     },
     EMPRETEC: {
       color: 'rgba(226, 75, 58, 1)',
-      component_image: 'Train_for_trade_empretec.png'
+      component_image: '2022-train_for_trade_ii_angola_empretec.png'
     },
     'Investment (IPR)': {
       color: 'rgba(96, 173, 208, 1)',
-      component_image: 'Train_for_trade_investment.png'
+      component_image: '2022-train_for_trade_ii_angola_investment.png'
     },
     'National Green Export Review (NGER)': {
       color: 'rgba(125, 174, 88, 1)',
-      component_image: 'Train_for_trade_national_green_export_review.png'
+      component_image: '2022-train_for_trade_ii_angola_national_green_export_review.png'
     },
     'Trade Facilitation': {
       color: 'rgba(15, 110, 157, 1)',
-      component_image: 'Train_for_trade_trade_facilitation.png'
+      component_image: '2022-train_for_trade_ii_angola_trade_facilitation.png'
     },
     'Transport & Logistics': {
       color: 'rgba(252, 213, 50, 1)',
-      component_image: 'Train_for_trade_transport_logistics.png'
+      component_image: '2022-train_for_trade_ii_angola_transport_logistics.png'
     }
   }), []);
 
@@ -65,7 +65,7 @@ function AngolaMap() {
     getData().then(data => {
       for (let i = 23; i <= 40; i++) {
         componentData.push({
-          components: data[i].components.split(';'),
+          components: data[i].extra.split(';'),
           name: data[i].name,
           total_count: parseInt(data[i].value, 10)
         });
@@ -157,7 +157,7 @@ function AngolaMap() {
   const loadMapData = useCallback(() => {
     // https://cartographyvectors.com/map/1412-angola-with-regions
     // https://observablehq.com/@saneef/fix-geojson
-    d3.json((window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-train_for_trade_ii_angola/assets/data/angola_map.topojson' : './assets/data/angola_map.topojson').then(data => {
+    d3.json((window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-2022-train_for_trade_ii_angola_ii_angola/assets/data/2022-train_for_trade_ii_angola_angola_map.topojson' : './assets/data/2022-train_for_trade_ii_angola_angola_map.topojson').then(data => {
       drawMap(data);
     });
   }, [drawMap]);
@@ -181,7 +181,7 @@ function AngolaMap() {
             <div className="components_container">
               {areaComponents.length > 0 && areaComponents.map((el) => (
                 <div className="component_container" key={el}>
-                  <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-train_for_trade_ii_angola/assets/img/${componentMetaData[el].component_image}` : `./assets/img/${componentMetaData[el].component_image}`} alt="" /></span>
+                  <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-2022-train_for_trade_ii_angola_ii_angola/assets/img/${componentMetaData[el].component_image}` : `./assets/img/${componentMetaData[el].component_image}`} alt="" /></span>
                   <span className="component_name">{el}</span>
 
                 </div>
