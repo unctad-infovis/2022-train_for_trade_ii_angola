@@ -198,7 +198,7 @@ function Policies() {
                 </div>
                 <div className="component_container">
                   <h4>
-                    <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-2022-train_for_trade_ii_angola_ii_angola/assets/img/${el.component_image}` : `./assets/img/${el.component_image}`} alt="" /></span>
+                    <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-train_for_trade_ii_angola/assets/img/${el.component_image}` : `./assets/img/${el.component_image}`} alt="" /></span>
                     <span className="component_label">Component</span>
                     <span className="component_name">{el.component_name}</span>
                   </h4>

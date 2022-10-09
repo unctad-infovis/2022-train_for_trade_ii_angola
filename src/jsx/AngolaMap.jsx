@@ -21,7 +21,7 @@ import { getData } from './helpers/GetData.js';
 // import formatNr from './helpers/FormatNr.js';
 // import roundNr from './helpers/RoundNr.js';
 
-// const appID = '#app-root-2022-2022-train_for_trade_ii_angola_ii_angola_components';
+// const appID = '#app-root-2022-2022-train_for_trade_ii_angola_components';
 
 function AngolaMap() {
   const appRef = useRef();
@@ -157,7 +157,7 @@ function AngolaMap() {
   const loadMapData = useCallback(() => {
     // https://cartographyvectors.com/map/1412-angola-with-regions
     // https://observablehq.com/@saneef/fix-geojson
-    d3.json((window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-2022-train_for_trade_ii_angola_ii_angola/assets/data/2022-train_for_trade_ii_angola_angola_map.topojson' : './assets/data/2022-train_for_trade_ii_angola_angola_map.topojson').then(data => {
+    d3.json((window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-train_for_trade_ii_angola/assets/data/2022-train_for_trade_ii_angola_map.topojson' : './assets/data/2022-train_for_trade_ii_angola_map.topojson').then(data => {
       drawMap(data);
     });
   }, [drawMap]);
@@ -181,7 +181,7 @@ function AngolaMap() {
             <div className="components_container">
               {areaComponents.length > 0 && areaComponents.map((el) => (
                 <div className="component_container" key={el}>
-                  <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-2022-train_for_trade_ii_angola_ii_angola/assets/img/${componentMetaData[el].component_image}` : `./assets/img/${componentMetaData[el].component_image}`} alt="" /></span>
+                  <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-train_for_trade_ii_angola/assets/img/${componentMetaData[el].component_image}` : `./assets/img/${componentMetaData[el].component_image}`} alt="" /></span>
                   <span className="component_name">{el}</span>
 
                 </div>

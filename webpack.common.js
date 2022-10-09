@@ -74,7 +74,7 @@ module.exports = {
       patterns: [
         { from: 'assets/img/', to: '../public/assets/img/', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }},
         { from: 'assets/data/2022-train_for_trade_ii_angola - data.csv', to: '../public/assets/data/2022-train_for_trade_ii_angola - data.csv', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }},
-        { from: 'assets/data/2022-train_for_trade_ii_angola_angola_map.topojson', to: '../public/assets/data/2022-train_for_trade_ii_angola_angola_map.topojson', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }},
+        { from: 'assets/data/2022-train_for_trade_ii_angola_map.topojson', to: '../public/assets/data/2022-train_for_trade_ii_angola_map.topojson', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }},
         { from: 'src/font/', to: '../public/font/', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }},
         { from: './favicon.png', to: '../public', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }}
       ]
