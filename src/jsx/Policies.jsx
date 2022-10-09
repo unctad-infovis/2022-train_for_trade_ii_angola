@@ -28,7 +28,7 @@ function Policies() {
         component_image: 'Train_for_trade_commercial_diplomacy.png',
         component_name: 'Commercial Diplomacy',
         percentage: percentages[0],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Support for Angola’s trade policy development and trade negotiations through the establishment of a robust analytical base, improved capacities to analyse the country’s economic fundaments and trade policy needs, as well as better negotiating skills.',
         policy_name: 'Trade Policy Strategy',
         text_color: '#fff'
       }, {
@@ -38,7 +38,7 @@ function Policies() {
         component_image: 'Train_for_trade_creative_industries.png',
         component_name: 'Creative Economy',
         percentage: percentages[1],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Establishment of a robust analytical base to facilitate the development of a Cultural and Creative Industries framework for Angola.',
         policy_name: 'Creative Economy Strategy',
         text_color: '#fff'
       }, {
@@ -48,7 +48,7 @@ function Policies() {
         component_image: 'Train_for_trade_empretec.png',
         component_name: 'EMPRETEC',
         percentage: percentages[2],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Institutional and analytical support for the development of a national entrepreneurship policy for Working Group leads.',
         policy_name: 'National Entrepreneurship Strategy',
         text_color: '#fff'
       }, {
@@ -58,7 +58,7 @@ function Policies() {
         component_image: 'Train_for_trade_investment.png',
         component_name: 'Investment (IPR)',
         percentage: percentages[3],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Strategic study and advisory services on an institutional investment facilitation strategy to target SDG sectors in Angola.',
         policy_name: 'Institutional investment facilitation strategy',
         text_color: '#fff'
       }, {
@@ -68,7 +68,7 @@ function Policies() {
         component_image: 'Train_for_trade_investment.png',
         component_name: 'Investment (IPR)',
         percentage: percentages[4],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Comprehensive review of policies and legal frameworks relevant to investment in Angola, including detailed and concrete recommendations with a view to improving Angola’s business climate to attract sustainable investment.',
         policy_name: 'Investment Policy Review of Angola',
         text_color: '#fff'
       }, {
@@ -78,7 +78,7 @@ function Policies() {
         component_image: 'Train_for_trade_investment.png',
         component_name: 'Investment (IPR)',
         percentage: percentages[5],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Comprehensive review of Angola\'s current bilateral and plurilateral investment treaties, including detailed and concrete recommendations with a view to improving future treaties and possibly reforming existing ones.',
         policy_name: 'Review of International Investment Agreements',
         text_color: '#fff'
       }, {
@@ -88,7 +88,7 @@ function Policies() {
         component_image: 'Train_for_trade_investment.png',
         component_name: 'Investment (IPR)',
         percentage: percentages[6],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Support to promoting sustainable investment in agribusiness and development of an investment promotion strategy based on concrete tools and assistance in their utilization (pilot focus on the tropical fruit and fertilizer sectors).',
         policy_name: 'Sustainable investment promotion strategy for agriculture',
         text_color: '#fff'
       }, {
@@ -98,7 +98,7 @@ function Policies() {
         component_image: 'Train_for_trade_national_green_export_review.png',
         component_name: 'National Green Export Review (NGER)',
         percentage: percentages[7],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Support to the development of a National Fisheries Export Strategy based on focused analysis of gaps and improvements needed to address them vis-à-vis target markets’ regulations and standards.',
         policy_name: 'Fisheries Export strategy',
         text_color: '#fff'
       }, {
@@ -108,7 +108,7 @@ function Policies() {
         component_image: 'Train_for_trade_national_green_export_review.png',
         component_name: 'National Green Export Review (NGER)',
         percentage: percentages[8],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Support for the development of the National Honey Policy to support the sector’s upgrading, value chain development and exports.',
         policy_name: 'Honey policy',
         text_color: '#fff'
       }, {
@@ -118,7 +118,7 @@ function Policies() {
         component_image: 'Train_for_trade_national_green_export_review.png',
         component_name: 'National Green Export Review (NGER)',
         percentage: percentages[9],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Support national stakeholders with the elaboration of a National Honey Residues Monitoring Plan to enable Angola to meet international SPS and quality standards for honey and derived products.',
         policy_name: 'Honey residue monitoring plans',
         text_color: '#fff'
       }, {
@@ -128,7 +128,7 @@ function Policies() {
         component_image: 'Train_for_trade_trade_facilitation.png',
         component_name: 'Trade Facilitation',
         percentage: percentages[10],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Support to the development of a National Trade Facilitation Strategy through a multiple-module training program, to promote more transparent and fluid trade.',
         policy_name: 'National Trade Facilitation Strategy',
         text_color: '#fff'
       }, {
@@ -138,7 +138,7 @@ function Policies() {
         component_image: 'Train_for_trade_transport_logistics.png',
         component_name: 'Transport & Logistics',
         percentage: percentages[11],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Comprehensive review assessing the performance of key transport corridors in Angola.',
         policy_name: 'Corridor review',
         text_color: '#000'
       }, {
@@ -148,7 +148,7 @@ function Policies() {
         component_image: 'Train_for_trade_transport_logistics.png',
         component_name: 'Transport & Logistics',
         percentage: percentages[12],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Technical support to the development of the PPP law.',
         policy_name: 'Public-Private Partnership Law',
         text_color: '#000'
       }, {
@@ -158,7 +158,7 @@ function Policies() {
         component_image: 'Train_for_trade_transport_logistics.png',
         component_name: 'Transport & Logistics',
         percentage: percentages[13],
-        policy_desc: 'Short description of the policy so people understand quickly what it is about',
+        policy_desc: 'Technical support to the development of the PPP Decree.',
         policy_name: 'Public-Private Partnership decree',
         text_color: '#000'
       }]);
