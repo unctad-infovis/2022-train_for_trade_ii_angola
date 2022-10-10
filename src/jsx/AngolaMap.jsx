@@ -173,6 +173,15 @@ function AngolaMap() {
         <div className="area_information_container">
           <div className="area_information_content">
             <h3>{selectedArea}</h3>
+            {(selectedArea === 'Moxico' || selectedArea === 'Uíge') && (
+            <p className="meta">
+              The data for
+              {' '}
+              {selectedArea}
+              {' '}
+              is not currently up-to-date
+            </p>
+            )}
             <div className="total_count" style={areaComponentCount > 0 ? { display: 'block' } : { display: 'none' }}>
               <span className="value">{areaComponentCount}</span>
               <span className="label">{areaComponentCount > 1 ? 'beneficiaries' : 'beneficiary'}</span>
