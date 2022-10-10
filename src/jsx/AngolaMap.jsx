@@ -175,7 +175,7 @@ function AngolaMap() {
             <h3>{selectedArea}</h3>
             <div className="total_count" style={areaComponentCount > 0 ? { display: 'block' } : { display: 'none' }}>
               <span className="value">{areaComponentCount}</span>
-              <span className="label">{areaComponentCount > 1 ? 'beneficaries' : 'beneficary'}</span>
+              <span className="label">{areaComponentCount > 1 ? 'beneficiaries' : 'beneficiary'}</span>
             </div>
             <h4 className="label" style={areaComponents.length > 0 ? { display: 'block' } : { display: 'none' }}>Components</h4>
             <div className="components_container">
@@ -183,7 +183,6 @@ function AngolaMap() {
                 <div className="component_container" key={el}>
                   <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-train_for_trade_ii_angola/assets/img/${componentMetaData[el].component_image}` : `./assets/img/${componentMetaData[el].component_image}`} alt="" /></span>
                   <span className="component_name">{el}</span>
-
                 </div>
               ))}
             </div>
