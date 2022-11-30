@@ -39,7 +39,7 @@ function SidePanel() {
   };
 
   const publicTargetCount = 500;
-  const privateTargetCount = 150;
+  const privateTargetCount = 100;
 
   useEffect(() => {
     setBarWidth(defineCurrentAppWidth());
