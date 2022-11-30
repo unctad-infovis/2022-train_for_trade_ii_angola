@@ -42,6 +42,8 @@
       overflow-x: scroll;
     }
     svg {
+      position: relative;
+      z-index: 1;
       .path {
         cursor: pointer;
         fill: #009edb;
@@ -84,6 +86,7 @@
       transition-property: opacity;
       transition-timing-function: linear;
       width: 100%;
+      z-index: 10;
       .area_information_content {
         display: flex;
         flex-direction: column;
