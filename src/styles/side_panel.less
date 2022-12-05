@@ -14,7 +14,7 @@
     margin: auto auto 20px auto;
     text-align: left;
     .value {
-      color: #009edb;
+      color: @unbluetext;
       font-family: "Open Sans";
       font-size: 50px;
       font-weight: 700;
@@ -49,7 +49,7 @@
       text-align: left;
       width: 150px;
       .value {
-        color: #009edb;
+        color: @unbluetext;
         font-family: "Open Sans";
         font-size: 36px;
         font-weight: 700;
@@ -149,10 +149,19 @@
               font-size: 15px;
             }
             &:after {
-              font-size: 20px;
-              color: #72bf44;
-              text-shadow: 1px 1px 1px #cee3a0;
+              color: @ungreen;
               content: "\25B2";
+              font-size: 20px;
+              text-shadow: 1px 1px 1px #cee3a0;
+            }
+          }
+        }
+      }
+      &.trainers {
+        >div {
+          .value {
+            .change {
+              left: 50px;
             }
           }
         }

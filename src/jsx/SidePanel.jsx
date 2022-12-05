@@ -28,6 +28,7 @@ function SidePanel() {
   const [privateCount, setPrivateCount] = useState(0);
   const [academiaCount, setAcademiaCount] = useState(0);
   const [ngoCount, setNGOCount] = useState(0);
+  const [trainersCount, setTrainersCount] = useState(0);
   const [updated, setUpdated] = useState('');
 
   const defineCurrentAppWidth = () => Math.min(appRef.current.offsetWidth, 300) - 70;
@@ -38,8 +39,9 @@ function SidePanel() {
     return b + c * (tc + -3 * ts + 3 * t);
   };
 
-  const publicTargetCount = 500;
   const privateTargetCount = 100;
+  const publicTargetCount = 500;
+  const trainersTargetCount = 50;
 
   useEffect(() => {
     setBarWidth(defineCurrentAppWidth());
@@ -48,9 +50,10 @@ function SidePanel() {
       setFemaleCount(parseInt(data[1].value, 10));
       setPublicCount(parseInt(data[3].value, 10));
       setPrivateCount(parseInt(data[4].value, 10));
+      setTrainersCount(parseInt(data[7].value, 10));
       setAcademiaCount(parseInt(data[5].value, 10));
       setNGOCount(parseInt(data[6].value, 10));
-      const d = new Date(data[43].value);
+      const d = new Date(data[44].value);
       setUpdated(d.toDateString());
     });
   }, []);
@@ -60,7 +63,7 @@ function SidePanel() {
   // }, [barWidth]);
 
   const showTargets = useCallback(() => {
-    const barMax = Math.ceil(Math.max(publicCount, privateCount, academiaCount, ngoCount) / 10) * 10;
+    const barMax = Math.ceil(Math.max(publicCount, privateCount, academiaCount, ngoCount, trainersCount) / 10) * 10;
     document.querySelector(`${appID} .targets_container`).style.opacity = 1;
 
     document.querySelector(`${appID} .public .bar.goal`).style.width = `${(publicTargetCount / barMax) * barWidth}px`;
@@ -69,6 +72,9 @@ function SidePanel() {
     document.querySelector(`${appID} .private .bar.goal`).style.width = `${(privateTargetCount / barMax) * barWidth}px`;
     document.querySelector(`${appID} .private .bar.current`).style.width = `${(privateCount / barMax) * barWidth}px`;
 
+    document.querySelector(`${appID} .trainers .bar.goal`).style.width = `${(trainersTargetCount / barMax) * barWidth}px`;
+    document.querySelector(`${appID} .trainers .bar.current`).style.width = `${(trainersCount / barMax) * barWidth}px`;
+
     document.querySelector(`${appID} .education .bar.current`).style.width = `${(academiaCount / barMax) * barWidth}px`;
 
     document.querySelector(`${appID} .ngo .bar.current`).style.width = `${(ngoCount / barMax) * barWidth}px`;
@@ -76,7 +82,7 @@ function SidePanel() {
     setTimeout(() => {
       document.querySelectorAll(`${appID} .change`).forEach(el => { el.style.opacity = 1; });
     }, 2000);
-  }, [privateCount, publicCount, academiaCount, ngoCount, barWidth]);
+  }, [privateCount, publicCount, academiaCount, ngoCount, barWidth, trainersCount]);
 
   const handleWindowResize = useCallback(() => {
     setBarWidth(defineCurrentAppWidth());
@@ -183,6 +189,29 @@ function SidePanel() {
                 </div>
               </div>
               {privateCount}
+            </div>
+          </div>
+        </div>
+        <div className="target_container trainers">
+          <div className="title">Trained as trainers</div>
+          <div className="value_bar_wrapper">
+            <div className="label">Goal</div>
+            <div className="value goal">
+              <div className="bar goal" data-width={trainersTargetCount} />
+              {trainersTargetCount}
+            </div>
+          </div>
+          <div className="value_bar_wrapper">
+            <div className="label">Current</div>
+            <div className="value current">
+              <div className="bar current" data-width={trainersCount}>
+                <div className="change" style={(barWidth > 180) ? { display: 'block' } : { display: 'none' }}>
+                  +
+                  {parseInt((trainersCount / trainersTargetCount) * 100, 10)}
+                  <span className="change_unit">%</span>
+                </div>
+              </div>
+              {trainersCount}
             </div>
           </div>
         </div>
