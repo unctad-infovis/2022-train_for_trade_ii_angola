@@ -192,6 +192,26 @@ function SidePanel() {
             </div>
           </div>
         </div>
+        <div className="target_container education">
+          <div className="title">Academia</div>
+          <div className="value_bar_wrapper">
+            <div className="label">Current</div>
+            <div className="value current">
+              <div className="bar current" data-width={academiaCount} />
+              {academiaCount}
+            </div>
+          </div>
+        </div>
+        <div className="target_container ngo">
+          <div className="title">NGO</div>
+          <div className="value_bar_wrapper">
+            <div className="label">Current</div>
+            <div className="value current">
+              <div className="bar current" data-width={ngoCount} />
+              {ngoCount}
+            </div>
+          </div>
+        </div>
         <div className="target_container trainers">
           <div className="title">Trained as trainers</div>
           <div className="value_bar_wrapper">
@@ -212,26 +232,6 @@ function SidePanel() {
                 </div>
               </div>
               {trainersCount}
-            </div>
-          </div>
-        </div>
-        <div className="target_container education">
-          <div className="title">Academia</div>
-          <div className="value_bar_wrapper">
-            <div className="label">Current</div>
-            <div className="value current">
-              <div className="bar current" data-width={academiaCount} />
-              {academiaCount}
-            </div>
-          </div>
-        </div>
-        <div className="target_container ngo">
-          <div className="title">NGO</div>
-          <div className="value_bar_wrapper">
-            <div className="label">Current</div>
-            <div className="value current">
-              <div className="bar current" data-width={ngoCount} />
-              {ngoCount}
             </div>
           </div>
         </div>
