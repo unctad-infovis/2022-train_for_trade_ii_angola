@@ -26,7 +26,7 @@ import { getData } from './helpers/GetData.js';
 function AngolaMap() {
   const appRef = useRef();
 
-  const names = useMemo(() => ['Bengo', 'Benguela', 'Bié', 'Cabinda', 'Kuando-Kubango', 'Kwanza-Norte', 'Kwanza-Sul', 'Cunene', 'Huambo', 'Huíla', 'Luanda', 'Lunda-Norte', 'Lunda-Sul', 'Malanje', 'Moxico', 'Namibe', 'Uíge', 'Zaire'], []);
+  const names = useMemo(() => ['Bengo', 'Benguela', 'Bié', 'Cabinda', 'Cunene', 'Huambo', 'Huíla', 'Kuando-Kubango', 'Kwanza-Norte', 'Kwanza-Sul', 'Luanda', 'Lunda Norte', 'Lunda Sul', 'Malanje', 'Moxico', 'Namibe', 'Uíge', 'Zaire'], []);
 
   const componentMetaData = useMemo(() => ({
     'Commercial Diplomacy': {
@@ -63,7 +63,6 @@ function AngolaMap() {
 
   useEffect(() => {
     getData().then(data => {
-      console.log(data);
       for (let i = 24; i <= 41; i++) {
         componentData.push({
           components: data[i].extra.split(';'),
@@ -190,9 +189,9 @@ function AngolaMap() {
             <h4 className="label" style={areaComponents.length > 0 ? { display: 'block' } : { display: 'none' }}>Components</h4>
             <div className="components_container">
               {areaComponents.length > 0 && areaComponents.map((el) => (
-                <div className="component_container" key={el}>
-                  <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-train_for_trade_ii_angola/assets/img/${componentMetaData[el].component_image}` : `./assets/img/${componentMetaData[el].component_image}`} alt="" /></span>
-                  <span className="component_name">{el}</span>
+                <div className="component_container" key={el.trim()}>
+                  <span className="component_indicator"><img src={(window.location.href.includes('unctad.org')) ? `https://storage.unctad.org/2022-train_for_trade_ii_angola/assets/img/${componentMetaData[el.trim()]?.component_image}` : `./assets/img/${componentMetaData[el.trim()]?.component_image}`} alt="" /></span>
+                  <span className="component_name">{el.trim()}</span>
                 </div>
               ))}
             </div>

@@ -159,7 +159,7 @@ function SidePanel() {
               <div className="bar current" data-width={publicCount}>
                 <div className="change" style={(barWidth > 180) ? { display: 'block' } : { display: 'none' }}>
                   +
-                  {parseInt((publicCount / publicTargetCount) * 100, 10)}
+                  {parseInt(((publicCount / publicTargetCount) - 1) * 100, 10)}
                   <span className="change_unit">%</span>
                 </div>
               </div>
@@ -184,7 +184,7 @@ function SidePanel() {
               <div className="bar current" data-width={privateCount}>
                 <div className="change" style={(barWidth > 180) ? { display: 'block' } : { display: 'none' }}>
                   +
-                  {parseInt((privateCount / privateTargetCount) * 100, 10)}
+                  {parseInt(((privateCount / privateTargetCount) - 1) * 100, 10)}
                   <span className="change_unit">%</span>
                 </div>
               </div>
@@ -227,7 +227,7 @@ function SidePanel() {
               <div className="bar current" data-width={trainersCount}>
                 <div className="change" style={(barWidth > 180) ? { display: 'block' } : { display: 'none' }}>
                   +
-                  {parseInt((trainersCount / trainersTargetCount) * 100, 10)}
+                  {parseInt(((trainersCount / trainersTargetCount - 1)) * 100, 10)}
                   <span className="change_unit">%</span>
                 </div>
               </div>
