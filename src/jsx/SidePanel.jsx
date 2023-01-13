@@ -12,7 +12,7 @@ import CountUp from 'react-countup';
 // Load helpers.
 import { getData } from './helpers/GetData.js';
 import formatNr from './helpers/FormatNr.js';
-// import roundNr from './helpers/RoundNr.js';
+import roundNr from './helpers/RoundNr.js';
 
 const appID = '#app-root-2022-train_for_trade_ii_angola_side_panel';
 
@@ -158,7 +158,7 @@ function SidePanel() {
             <div className="value current">
               <div className="bar current" data-width={publicCount}>
                 <div className="change" style={(barWidth > 180) ? { display: 'block' } : { display: 'none' }}>
-                  {parseInt(((publicCount / publicTargetCount)) * 100, 10)}
+                  {parseInt(roundNr(((publicCount / publicTargetCount)) * 100, 0), 10)}
                   <span className="change_unit">%</span>
                 </div>
               </div>
@@ -182,7 +182,7 @@ function SidePanel() {
             <div className="value current">
               <div className="bar current" data-width={privateCount}>
                 <div className="change" style={(barWidth > 180) ? { display: 'block' } : { display: 'none' }}>
-                  {parseInt(((privateCount / privateTargetCount)) * 100, 10)}
+                  {parseInt(roundNr(((privateCount / privateTargetCount)) * 100, 0), 10)}
                   <span className="change_unit">%</span>
                 </div>
               </div>
@@ -224,7 +224,7 @@ function SidePanel() {
             <div className="value current">
               <div className="bar current" data-width={trainersCount}>
                 <div className="change" style={(barWidth > 180) ? { display: 'block' } : { display: 'none' }}>
-                  {parseInt(((trainersCount / trainersTargetCount)) * 100, 10)}
+                  {parseInt(roundNr(((trainersCount / trainersTargetCount)) * 100, 0), 10)}
                   <span className="change_unit">%</span>
                 </div>
               </div>
