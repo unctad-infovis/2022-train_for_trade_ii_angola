@@ -1,10 +1,10 @@
 name,value,extra,number of components (automated)
-Male,1731,,
-Female,809,,
+Male,1753,,
+Female,816,,
 ,,,
-Public,1401,,
-Private,848,,
-Academia,128,,
+Public,1410,,
+Private,864,,
+Academia,130,,
 NGO,107,,
 Trainers,73,,
 ,,,
@@ -23,7 +23,7 @@ Corridor review,10,,
 Public-Private Partnership Law,100,,
 Public-Private Partnership decree,100,,
 ,,,
-Bengo,8,Commercial Diplomacy; National Green Export Review (NGER),2
+Bengo,8,Commercial Diplomacy; National Green Export Review (NGER); EMPRETEC,3
 Benguela,45,Commercial Diplomacy;Investment (IPR);National Green Export Review (NGER); Transport & Logistics,4
 Bié,34,Creative Economy;EMPRETEC;National Green Export Review (NGER),3
 Cabinda,14,Commercial Diplomacy;National Green Export Review (NGER); Investment (IPR);Transport & Logistics,4
@@ -33,7 +33,7 @@ Huíla,87,Commercial Diplomacy;Creative Economy;EMPRETEC;National Green Export R
 Kuando-Kubango,4,National Green Export Review (NGER),1
 Kwanza-Norte,32,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
 Kwanza-Sul,57,Commercial Diplomacy;Creative Economy;EMPRETEC;National Green Export Review (NGER); Transport & Logistics,5
-Luanda,1371,Commercial Diplomacy;Creative Economy;EMPRETEC;Investment (IPR);National Green Export Review (NGER);Trade Facilitation;Transport & Logistics,7
+Luanda,1401,Commercial Diplomacy;Creative Economy;EMPRETEC;Investment (IPR);National Green Export Review (NGER);Trade Facilitation;Transport & Logistics,7
 Lunda Norte,2,Commercial Diplomacy;National Green Export Review (NGER),2
 Lunda Sul,7,Commercial Diplomacy;National Green Export Review (NGER),2
 Malanje,32,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
@@ -43,4 +43,4 @@ Uíge,187,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
 Zaire,38,Creative Economy;Commercial Diplomacy;EMPRETEC;Transport & Logistics,5
 Missões diplomáticas de Angola,6,Commercial Diplomacy;Creative Economy;Investment (IPR);National Green Export Review (NGER);Transport & Logistics,5
 ,,,
-Updated,1/25/23 10:00,,
+Updated,3/27/23 9:10,,
