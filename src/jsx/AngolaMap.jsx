@@ -154,6 +154,12 @@ function AngolaMap() {
         if (names[i] === 'Bengo') {
           return d[1] - 40;
         }
+        if (names[i] === 'Kwanza-Sul') {
+          return d[1] - 20;
+        }
+        if (names[i] === 'Kuando-Kubango') {
+          return d[1] - 15;
+        }
         return d[1] - 10;
       })
       .attr('height', 50)
