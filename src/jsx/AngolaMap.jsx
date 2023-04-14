@@ -131,26 +131,37 @@ function AngolaMap() {
       .append('foreignObject')
       .attr('x', (d, i) => {
         if (names[i] === 'Luanda') {
-          return d[0] - 60;
-        } if (names[i] === 'Bengo') {
+          return d[0] - 50;
+        }
+        if (names[i] === 'Benguela') {
+          return d[0] - 45;
+        }
+        if (names[i] === 'Bié') {
+          return d[0] - 10;
+        }
+        if (names[i] === 'Bengo') {
           return d[0] - 40;
         }
-        return d[0] - 40;
+        if (names[i] === 'Lunda Norte') {
+          return d[0] - 50;
+        }
+        return d[0] - 32;
       })
       .attr('y', (d, i) => {
         if (names[i] === 'Luanda') {
-          return d[1] - 20;
+          return d[1] - 10;
         }
         if (names[i] === 'Bengo') {
-          return d[1] - 50;
+          return d[1] - 40;
         }
-        return d[1] - 25;
+        return d[1] - 10;
       })
       .attr('height', 50)
       .attr('width', 80)
       .append('xhtml:body')
       .attr('xmlns', 'http://www.w3.org/1999/xhtml')
       .append('xhtml:div')
+      .attr('class', 'info')
       .html((d, i) => names[i]);
   }, [showData, names]);
 
