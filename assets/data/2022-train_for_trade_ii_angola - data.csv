@@ -1,11 +1,11 @@
 name,value,extra,number of components (automated)
-Male,1787,,
-Female,828,,
+Male,1816,,
+Female,852,,
 ,,,
-Public,1428,,
-Private,886,,
-Academia,131,,
-NGO,111,,
+Public,1452,,
+Private,904,,
+Academia,132,,
+NGO,115,,
 Trainers,73,,
 ,,,
 Trade Policy Strategy,60,,
@@ -15,9 +15,9 @@ Institutional investment facilitation strategy,10,,
 Investment Policy Review of Angola,100,,
 Review of International Investment Agreements,100,,
 Sustainable investment promotion strategy for agriculture,50,,
-Fisheries Export strategy,40,,
-Honey policy,40,,
-Honey residue monitoring plan,40,,
+Fisheries Export strategy,50,,
+Honey policy,60,,
+Honey residue monitoring plan,60,,
 National Trade Facilitation Strategy,40,,
 Corridor review,10,,
 Public-Private Partnership Law,100,,
@@ -33,7 +33,7 @@ Huíla,87,Commercial Diplomacy;Creative Economy;EMPRETEC;National Green Export R
 Kuando-Kubango,4,National Green Export Review (NGER),1
 Kwanza-Norte,33,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
 Kwanza-Sul,58,Commercial Diplomacy;Creative Economy;EMPRETEC;National Green Export Review (NGER); Transport & Logistics,5
-Luanda,1426,Commercial Diplomacy;Creative Economy;EMPRETEC;Investment (IPR);National Green Export Review (NGER);Trade Facilitation;Transport & Logistics,7
+Luanda,1475,Commercial Diplomacy;Creative Economy;EMPRETEC;Investment (IPR);National Green Export Review (NGER);Trade Facilitation;Transport & Logistics,7
 Lunda Norte,2,Commercial Diplomacy;National Green Export Review (NGER),2
 Lunda Sul,7,Commercial Diplomacy;National Green Export Review (NGER),2
 Malanje,32,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
@@ -43,4 +43,4 @@ Uíge,187,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
 Zaire,51,Creative Economy; Commercial Diplomacy; National Green Export Review (NGER); EMPRETEC; Transport & Logistics,5
 Missões diplomáticas de Angola,6,Commercial Diplomacy;Creative Economy;Investment (IPR);National Green Export Review (NGER);Transport & Logistics,5
 ,,,
-Updated,4/19/23 9:45,,
+Updated,5/26/23 17:15,,
