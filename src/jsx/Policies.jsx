@@ -36,10 +36,10 @@ function Policies() {
         component_bordercolor: 'rgba(238, 154, 59, 0.8)',
         component_color: 'rgba(238, 154, 59, 1)',
         component_image: '2022-train_for_trade_ii_angola_creative_industries.png',
-        component_name: 'Creative Economy',
+        component_name: 'Cultural and Creative Industries',
         percentage: percentages[1],
         policy_desc: 'Establishment of a robust analytical base to facilitate the assessment and development of cultural and creative industries in Angola.',
-        policy_name: 'Creative Economy Strategy',
+        policy_name: 'Cultural and creative industries strategy',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(226, 75, 58, 0.3)',
@@ -49,7 +49,7 @@ function Policies() {
         component_name: 'EMPRETEC',
         percentage: percentages[2],
         policy_desc: 'Institutional and analytical support for the development of a national entrepreneurship policy for Working Group leads.',
-        policy_name: 'National Entrepreneurship Strategy',
+        policy_name: 'National entrepreneurship strategy',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(96, 173, 208, 0.3)',
@@ -69,7 +69,7 @@ function Policies() {
         component_name: 'Investment (IPR)',
         percentage: percentages[4],
         policy_desc: 'Comprehensive review of policies and legal frameworks relevant to investment in Angola, including detailed and concrete recommendations with a view to improving Angola’s business climate to attract sustainable investment.',
-        policy_name: 'Investment Policy Review of Angola',
+        policy_name: 'Investment policy review of Angola',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(96, 173, 208, 0.3)',
@@ -79,7 +79,7 @@ function Policies() {
         component_name: 'Investment (IPR)',
         percentage: percentages[5],
         policy_desc: 'Comprehensive review of Angola\'s current bilateral and plurilateral investment treaties, including detailed and concrete recommendations with a view to improving future treaties and possibly reforming existing ones.',
-        policy_name: 'Review of International Investment Agreements',
+        policy_name: 'Review of international investment agreements',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(96, 173, 208, 0.3)',
@@ -99,7 +99,7 @@ function Policies() {
         component_name: 'National Green Export Review (NGER)',
         percentage: percentages[7],
         policy_desc: 'Support to the development of a National Fisheries Export Strategy based on focused analysis of gaps and improvements needed to address them vis-à-vis target markets’ regulations and standards.',
-        policy_name: 'Fisheries Export strategy',
+        policy_name: 'Fisheries export strategy',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(125, 174, 88, 0.3)',
@@ -119,7 +119,7 @@ function Policies() {
         component_name: 'National Green Export Review (NGER)',
         percentage: percentages[9],
         policy_desc: 'Support national stakeholders with the elaboration of a National Honey Residues Monitoring Plan to enable Angola to meet international SPS and quality standards for honey and derived products.',
-        policy_name: 'Honey residue monitoring plans',
+        policy_name: 'Honey residue monitoring plan',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(15, 110, 157, 0.3)',
@@ -129,7 +129,7 @@ function Policies() {
         component_name: 'Trade Facilitation',
         percentage: percentages[10],
         policy_desc: 'Support to the development of a National Trade Facilitation Strategy through a multiple-module training program, to promote more transparent and fluid trade.',
-        policy_name: 'National Trade Facilitation Strategy',
+        policy_name: 'National trade facilitation strategy',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(252, 213, 50, 0.3)',
@@ -149,7 +149,7 @@ function Policies() {
         component_name: 'Transport & Logistics',
         percentage: percentages[12],
         policy_desc: 'Technical support to the development of the PPP law.',
-        policy_name: 'Public-Private Partnership Law',
+        policy_name: 'Public-private partnership law',
         text_color: '#000'
       }, {
         component_bgcolor: 'rgba(252, 213, 50, 0.3)',
@@ -159,7 +159,7 @@ function Policies() {
         component_name: 'Transport & Logistics',
         percentage: percentages[13],
         policy_desc: 'Technical support to the development of the PPP Decree.',
-        policy_name: 'Public-Private Partnership decree',
+        policy_name: 'Public-private partnership decree',
         text_color: '#000'
       }]);
     });
