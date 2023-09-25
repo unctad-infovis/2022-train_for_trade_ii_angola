@@ -88,8 +88,8 @@ function Policies() {
         component_image: '2022-train_for_trade_ii_angola_investment.png',
         component_name: 'Investment (IPR)',
         percentage: percentages[6],
-        policy_desc: 'Support to promoting sustainable investment in agribusiness and development of an investment promotion strategy based on concrete tools and assistance in their utilization (pilot focus on the tropical fruit and fertilizer sectors).',
-        policy_name: 'Sustainable investment promotion strategy for agriculture',
+        policy_desc: 'Development of a guide to integrate sustainability and good governance to the SWF processes, and assistance to its practical application.',
+        policy_name: 'Sustainability Strategy for the Sovereign Wealth Fund',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(125, 174, 88, 0.3)',
@@ -108,7 +108,7 @@ function Policies() {
         component_image: '2022-train_for_trade_ii_angola_national_green_export_review.png',
         component_name: 'National Green Export Review (NGER)',
         percentage: percentages[8],
-        policy_desc: 'Support for the development of the National Honey Policy to support the sector’s upgrading, value chain development and exports.',
+        policy_desc: 'Development of a guide to assist in the drafting of the National Honey Policy.',
         policy_name: 'Honey policy',
         text_color: '#fff'
       }, {
@@ -139,7 +139,7 @@ function Policies() {
         component_name: 'Transport & Logistics',
         percentage: percentages[11],
         policy_desc: 'Comprehensive review assessing the performance of key transport corridors in Angola.',
-        policy_name: 'Corridor review',
+        policy_name: 'Sustainable freight transport (SFT) rapid assessment',
         text_color: '#000'
       }, {
         component_bgcolor: 'rgba(252, 213, 50, 0.3)',
