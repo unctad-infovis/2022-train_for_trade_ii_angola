@@ -38,7 +38,7 @@ function Policies() {
         component_image: '2022-train_for_trade_ii_angola_creative_industries.png',
         component_name: 'Cultural and Creative Industries',
         percentage: percentages[1],
-        policy_desc: 'Establishment of a robust analytical base to facilitate the assessment and development of cultural and creative industries in Angola.',
+        policy_desc: 'Establishment of a robust analytical base to facilitate the development of a Cultural and Creative Industries framework for Angola.',
         policy_name: 'Cultural and creative industries strategy',
         text_color: '#fff'
       }, {
