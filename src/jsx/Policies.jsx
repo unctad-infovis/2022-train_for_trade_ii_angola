@@ -28,7 +28,7 @@ function Policies() {
         component_image: '2022-train_for_trade_ii_angola_commercial_diplomacy.png',
         component_name: 'Commercial Diplomacy',
         percentage: percentages[0],
-        policy_desc: 'Support for Angola’s trade policy development and trade negotiations through the establishment of a robust analytical base, improved capacities to analyse the country’s economic fundaments and trade policy needs, as well as better negotiating skills.',
+        policy_desc: 'The report “Trade policy frameworks for developing countries: A manual of best practices” was developed in the draft of the Trade Policy Strategy',
         policy_name: 'Trade policy strategy',
         text_color: '#fff'
       }, {
