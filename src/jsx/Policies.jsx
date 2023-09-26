@@ -29,7 +29,7 @@ function Policies() {
         component_name: 'Commercial Diplomacy',
         percentage: percentages[0],
         policy_desc: 'Support for Angola’s trade policy development and trade negotiations through the establishment of a robust analytical base, improved capacities to analyse the country’s economic fundaments and trade policy needs, as well as better negotiating skills.',
-        policy_name: 'Trade Policy Strategy',
+        policy_name: 'Trade policy strategy',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(238, 154, 59, 0.3)',
