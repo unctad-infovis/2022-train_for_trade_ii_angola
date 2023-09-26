@@ -58,8 +58,8 @@ function Policies() {
         component_image: '2022-train_for_trade_ii_angola_investment.png',
         component_name: 'Investment (IPR)',
         percentage: percentages[3],
-        policy_desc: 'Strategic study and advisory services on an institutional investment facilitation strategy to target SDG sectors in Angola.',
-        policy_name: 'Institutional investment facilitation strategy',
+        policy_desc: 'Development of a guide to integrate sustainability and good governance to the SWF processes, and assistance to its practical application.',
+        policy_name: 'Sustainability Strategy for the Sovereign Wealth Fund',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(96, 173, 208, 0.3)',
@@ -68,6 +68,16 @@ function Policies() {
         component_image: '2022-train_for_trade_ii_angola_investment.png',
         component_name: 'Investment (IPR)',
         percentage: percentages[4],
+        policy_desc: 'Support to promoting sustainable investment in agribusiness and development of an investment promotion strategy based on concrete tools and assistance in their utilization (pilot focus on the tropical fruit and fertilizer sectors).',
+        policy_name: 'Sustainable investment promotion strategy for agriculture',
+        text_color: '#fff'
+      }, {
+        component_bgcolor: 'rgba(96, 173, 208, 0.3)',
+        component_bordercolor: 'rgba(96, 173, 208, 0.8)',
+        component_color: 'rgba(96, 173, 208, 1)',
+        component_image: '2022-train_for_trade_ii_angola_investment.png',
+        component_name: 'Investment (IPR)',
+        percentage: percentages[5],
         policy_desc: 'Comprehensive review of policies and legal frameworks relevant to investment in Angola, including detailed and concrete recommendations with a view to improving Angola’s business climate to attract sustainable investment.',
         policy_name: 'Investment policy review of Angola',
         text_color: '#fff'
@@ -77,19 +87,9 @@ function Policies() {
         component_color: 'rgba(96, 173, 208, 1)',
         component_image: '2022-train_for_trade_ii_angola_investment.png',
         component_name: 'Investment (IPR)',
-        percentage: percentages[5],
+        percentage: percentages[6],
         policy_desc: 'Comprehensive review of Angola\'s current bilateral and plurilateral investment treaties, including detailed and concrete recommendations with a view to improving future treaties and possibly reforming existing ones.',
         policy_name: 'Review of international investment agreements',
-        text_color: '#fff'
-      }, {
-        component_bgcolor: 'rgba(96, 173, 208, 0.3)',
-        component_bordercolor: 'rgba(96, 173, 208, 0.8)',
-        component_color: 'rgba(96, 173, 208, 1)',
-        component_image: '2022-train_for_trade_ii_angola_investment.png',
-        component_name: 'Investment (IPR)',
-        percentage: percentages[6],
-        policy_desc: 'Development of a guide to integrate sustainability and good governance to the SWF processes, and assistance to its practical application.',
-        policy_name: 'Sustainability Strategy for the Sovereign Wealth Fund',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(125, 174, 88, 0.3)',
@@ -149,7 +149,7 @@ function Policies() {
         component_name: 'Transport & Logistics',
         percentage: percentages[12],
         policy_desc: 'Technical support to the development of the PPP law.',
-        policy_name: 'Public-private partnership law',
+        policy_name: 'Public-private partnership (PPP) law',
         text_color: '#000'
       }, {
         component_bgcolor: 'rgba(252, 213, 50, 0.3)',
@@ -159,7 +159,7 @@ function Policies() {
         component_name: 'Transport & Logistics',
         percentage: percentages[13],
         policy_desc: 'Technical support to the development of the PPP Decree.',
-        policy_name: 'Public-private partnership decree',
+        policy_name: 'Public-private partnership (PPP) decree',
         text_color: '#000'
       }]);
     });
