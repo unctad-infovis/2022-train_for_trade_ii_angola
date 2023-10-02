@@ -122,12 +122,22 @@ function Policies() {
         policy_name: 'Honey residue monitoring plan',
         text_color: '#fff'
       }, {
+        component_bgcolor: 'rgba(125, 174, 88, 0.3)',
+        component_bordercolor: 'rgba(125, 174, 88, 0.8)',
+        component_color: 'rgba(125, 174, 88, 1)',
+        component_image: '2022-train_for_trade_ii_angola_national_green_export_review.png',
+        component_name: 'National Green Export Review (NGER)',
+        percentage: percentages[10],
+        policy_desc: 'Support to National Quality Policy process through Action plan and Gaps Assessment for fisheries, tropical fruits and coffee sectors.',
+        policy_name: 'National Quality Infrastructure',
+        text_color: '#fff'
+      }, {
         component_bgcolor: 'rgba(15, 110, 157, 0.3)',
         component_bordercolor: 'rgba(15, 110, 157, 0.8)',
         component_color: 'rgba(15, 110, 157, 1)',
         component_image: '2022-train_for_trade_ii_angola_trade_facilitation.png',
         component_name: 'Trade Facilitation',
-        percentage: percentages[10],
+        percentage: percentages[11],
         policy_desc: 'Support to the development of a National Trade Facilitation Strategy through a multiple-module training program, to promote more transparent and fluid trade.',
         policy_name: 'National trade facilitation strategy',
         text_color: '#fff'
@@ -137,7 +147,7 @@ function Policies() {
         component_color: 'rgba(252, 213, 50, 1)',
         component_image: '2022-train_for_trade_ii_angola_transport_logistics.png',
         component_name: 'Transport & Logistics',
-        percentage: percentages[11],
+        percentage: percentages[12],
         policy_desc: 'Comprehensive review assessing the performance of key transport corridors in Angola.',
         policy_name: 'Sustainable freight transport (SFT) rapid assessment',
         text_color: '#000'
@@ -147,7 +157,7 @@ function Policies() {
         component_color: 'rgba(252, 213, 50, 1)',
         component_image: '2022-train_for_trade_ii_angola_transport_logistics.png',
         component_name: 'Transport & Logistics',
-        percentage: percentages[12],
+        percentage: percentages[13],
         policy_desc: 'Technical support to the development of the PPP law.',
         policy_name: 'Public-private partnership (PPP) law',
         text_color: '#000'
@@ -157,7 +167,7 @@ function Policies() {
         component_color: 'rgba(252, 213, 50, 1)',
         component_image: '2022-train_for_trade_ii_angola_transport_logistics.png',
         component_name: 'Transport & Logistics',
-        percentage: percentages[13],
+        percentage: percentages[14],
         policy_desc: 'Technical support to the development of the PPP Decree.',
         policy_name: 'Public-private partnership (PPP) decree',
         text_color: '#000'
