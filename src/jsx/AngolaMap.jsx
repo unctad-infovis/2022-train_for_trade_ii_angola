@@ -63,7 +63,7 @@ function AngolaMap() {
 
   useEffect(() => {
     getData().then(data => {
-      for (let i = 24; i <= 41; i++) {
+      for (let i = 25; i <= 42; i++) {
         componentData.push({
           components: data[i].extra.split(';'),
           name: data[i].name,
