@@ -53,7 +53,7 @@ function SidePanel() {
       setTrainersCount(parseInt(data[7].value, 10));
       setAcademiaCount(parseInt(data[5].value, 10));
       setNGOCount(parseInt(data[6].value, 10));
-      const d = new Date(data[44].value);
+      const d = new Date(data[45].value);
       setUpdated(d.toDateString());
     });
   }, []);
