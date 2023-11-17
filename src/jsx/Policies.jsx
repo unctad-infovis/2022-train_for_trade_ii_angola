@@ -28,7 +28,7 @@ function Policies() {
         component_image: '2022-train_for_trade_ii_angola_commercial_diplomacy.png',
         component_name: 'Commercial Diplomacy',
         percentage: percentages[0],
-        policy_desc: 'The report “Trade policy frameworks for developing countries: A manual of best practices” was developed in the draft of the Trade Policy Strategy',
+        policy_desc: 'Comprehensive and multisectoral trade policy training provided and the manual "Trade policy frameworks for developing countries: A manual of best practices” developed to support the revision of Angola\'s Trade Policy Strategy',
         policy_name: 'Trade policy strategy',
         text_color: '#fff'
       }, {
@@ -48,7 +48,7 @@ function Policies() {
         component_image: '2022-train_for_trade_ii_angola_empretec.png',
         component_name: 'EMPRETEC',
         percentage: percentages[2],
-        policy_desc: 'Institutional and analytical support for the development of a national entrepreneurship policy for Working Group leads.',
+        policy_desc: 'Institutional and analytical support for the development of a national entrepreneurship strategy.',
         policy_name: 'National entrepreneurship strategy',
         text_color: '#fff'
       }, {

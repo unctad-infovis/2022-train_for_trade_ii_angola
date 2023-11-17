@@ -1,17 +1,17 @@
 name,value,extra,number of components (automated)
-Male,1920,,
-Female,915,,
+Male,1931,,
+Female,925,,
 ,,,
-Public,1486,,
-Private,994,,
-Academia,144,,
-NGO,122,,
-Trainers,73,,
+Public,1492,∆ 298%,
+Private,1004,∆ 1004%,
+Academia,147,,
+NGO,123,,
+Trainers,73,∆ 146%,
 ,,,
 Trade Policy Strategy,60,,
 Cultural and Creative Industries Strategy,100,,
-National Entrepreneurship Strategy,60,,
-Sustainability Strategy for the Sovereign Wealth Fund,70,,
+National Entrepreneurship Strategy,80,,
+Sustainability Strategy for the Sovereign Wealth Fund,95,,
 Investment Policy Review of Angola,100,,
 Review of International Investment Agreements,100,,
 Sustainable investment promotion strategy for agriculture,100,,
@@ -20,10 +20,10 @@ Honey policy,95,,
 Honey residue monitoring plan,95,,
 National quality infrastructure,100,,
 National Trade Facilitation Strategy,95,,
-Sustainable freight transport (SFT) rapid assessment,40,,
+Sustainable freight transport (SFT) rapid assessment,70,,
 Public-Private Partnership Law,100,,
 Public-Private Partnership decree,100,,
-,,,1
+,,,
 Bengo,9,Commercial Diplomacy; Creative Economy; National Green Export Review (NGER); EMPRETEC,4
 Benguela,73,Commercial Diplomacy;Investment (IPR);National Green Export Review (NGER); Transport & Logistics; EMPRETEC,5
 Bié,35,Creative Economy;EMPRETEC;National Green Export Review (NGER),3
@@ -40,8 +40,8 @@ Lunda Sul,7,Commercial Diplomacy;National Green Export Review (NGER),2
 Malanje,32,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
 Moxico,61,Commercial Diplomacy;EMPRETEC;Investment (IPR);National Green Export Review (NGER);Transport & Logistics,5
 Namibe,17,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER);Transport & Logistics,4
-Uíge,187,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),5
+Uíge,187,Commercial Diplomacy;EMPRETEC;National Green Export Review (NGER),3
 Zaire,52,Creative Economy; Commercial Diplomacy; National Green Export Review (NGER); EMPRETEC; Transport & Logistics,5
-Missões diplomáticas de Angola,6,Commercial Diplomacy;Creative Economy;Investment (IPR);National Green Export Review (NGER);Transport & Logistics,
+Missões diplomáticas de Angola,6,Commercial Diplomacy;Creative Economy;Investment (IPR);National Green Export Review (NGER);Transport & Logistics,5
 ,,,
 Updated,10/3/23 12:45,,
