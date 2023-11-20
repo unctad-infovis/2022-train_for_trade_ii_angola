@@ -59,7 +59,7 @@ function Policies() {
         component_name: 'Investment (IPR)',
         percentage: percentages[3],
         policy_desc: 'Development of a guide to integrate sustainability and good governance to the SWF processes, and assistance to its practical application.',
-        policy_name: 'Sustainability Strategy for the Sovereign Wealth Fund',
+        policy_name: 'Sustainability framework for the Sovereign Wealth Fund',
         text_color: '#fff'
       }, {
         component_bgcolor: 'rgba(96, 173, 208, 0.3)',
