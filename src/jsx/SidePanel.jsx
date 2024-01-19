@@ -30,6 +30,7 @@ function SidePanel() {
   const [ngoCount, setNGOCount] = useState(0);
   const [trainersCount, setTrainersCount] = useState(0);
   const [updated, setUpdated] = useState('');
+  const otherCount = 3;
 
   const defineCurrentAppWidth = () => Math.min(appRef.current.offsetWidth, 300) - 70;
 
@@ -124,7 +125,7 @@ function SidePanel() {
           <IsVisible once>
             {(isVisible) => (
               <div style={{ height: 55, display: 'inline-block', width: 182 }}>
-                {(isVisible && hasStarted === false && femaleCount > 0) ? <CountUp delay={1} end={(femaleCount + maleCount)} start={0} duration={3} useEasing easingFn={easingFn} onEnd={() => onCoutUpEnd()} onStart={onCoutUpStart} formattingFn={formatNr} /> : null}
+                {(isVisible && hasStarted === false && femaleCount > 0) ? <CountUp delay={1} end={(femaleCount + maleCount + otherCount)} start={0} duration={3} useEasing easingFn={easingFn} onEnd={() => onCoutUpEnd()} onStart={onCoutUpStart} formattingFn={formatNr} /> : null}
               </div>
             )}
           </IsVisible>
