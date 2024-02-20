@@ -23,6 +23,7 @@ function SidePanel() {
   const [barsDrawn, setBarsDrawn] = useState(false);
   const [barWidth, setBarWidth] = useState(0);
   const [femaleCount, setFemaleCount] = useState(0);
+  const [blankCount, setBlankCount] = useState(0);
   const [maleCount, setMaleCount] = useState(0);
   const [publicCount, setPublicCount] = useState(0);
   const [privateCount, setPrivateCount] = useState(0);
@@ -30,7 +31,6 @@ function SidePanel() {
   const [ngoCount, setNGOCount] = useState(0);
   const [trainersCount, setTrainersCount] = useState(0);
   const [updated, setUpdated] = useState('');
-  const otherCount = 3;
 
   const defineCurrentAppWidth = () => Math.min(appRef.current.offsetWidth, 300) - 70;
 
@@ -49,12 +49,13 @@ function SidePanel() {
     getData().then(data => {
       setMaleCount(parseInt(data[0].value, 10));
       setFemaleCount(parseInt(data[1].value, 10));
-      setPublicCount(parseInt(data[3].value, 10));
-      setPrivateCount(parseInt(data[4].value, 10));
-      setTrainersCount(parseInt(data[7].value, 10));
-      setAcademiaCount(parseInt(data[5].value, 10));
-      setNGOCount(parseInt(data[6].value, 10));
-      const d = new Date(data[45].value);
+      setBlankCount(parseInt(data[2].value, 10));
+      setPublicCount(parseInt(data[4].value, 10));
+      setPrivateCount(parseInt(data[5].value, 10));
+      setTrainersCount(parseInt(data[8].value, 10));
+      setAcademiaCount(parseInt(data[6].value, 10));
+      setNGOCount(parseInt(data[7].value, 10));
+      const d = new Date(data[46].value);
       setUpdated(d.toDateString());
     });
   }, []);
@@ -125,7 +126,7 @@ function SidePanel() {
           <IsVisible once>
             {(isVisible) => (
               <div style={{ height: 55, display: 'inline-block', width: 182 }}>
-                {(isVisible && hasStarted === false && femaleCount > 0) ? <CountUp delay={1} end={(femaleCount + maleCount + otherCount)} start={0} duration={3} useEasing easingFn={easingFn} onEnd={() => onCoutUpEnd()} onStart={onCoutUpStart} formattingFn={formatNr} /> : null}
+                {(isVisible && hasStarted === false && femaleCount > 0) ? <CountUp delay={1} end={(femaleCount + maleCount + blankCount)} start={0} duration={3} useEasing easingFn={easingFn} onEnd={() => onCoutUpEnd()} onStart={onCoutUpStart} formattingFn={formatNr} /> : null}
               </div>
             )}
           </IsVisible>
@@ -140,6 +141,10 @@ function SidePanel() {
         <div className="gender_container">
           <span className="value">{femaleCount.toLocaleString('en-EN')}</span>
           <span className="label">Female</span>
+        </div>
+        <div className="gender_container">
+          <span className="value">{blankCount.toLocaleString('en-EN')}</span>
+          <span className="label">no answer</span>
         </div>
       </div>
       <div className="targets_container">

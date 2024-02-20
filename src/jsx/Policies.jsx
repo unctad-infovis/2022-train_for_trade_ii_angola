@@ -18,7 +18,7 @@ function Policies() {
   useEffect(() => {
     const percentages = [];
     getData().then(body => {
-      for (let i = 9; i <= 23; i++) {
+      for (let i = 10; i <= 24; i++) {
         percentages.push(body[i].value);
       }
       setData([{
