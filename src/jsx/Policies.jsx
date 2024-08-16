@@ -138,7 +138,7 @@ function Policies() {
         component_image: '2022-train_for_trade_ii_angola_trade_facilitation.png',
         component_name: 'Trade Facilitation',
         percentage: percentages[11],
-        policy_desc: 'SSupport to the development of a National Trade Facilitation Roadmap through a multiple-module training program, to promote more transparent and fluid trade.',
+        policy_desc: 'Support to the development of a National Trade Facilitation Roadmap through a multiple-module training program, to promote more transparent and fluid trade.',
         policy_name: 'National Trade Facilitation Roadmap',
         text_color: '#fff'
       }, {
