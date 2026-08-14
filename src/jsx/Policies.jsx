@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, {
+  useEffect, useRef, useState
+} from 'react';
+import PropTypes from 'prop-types';
 import '../styles/policies.less';
 
 // https://www.npmjs.com/package/react-is-visible
 import 'intersection-observer';
-import IsVisible from 'react-is-visible';
+import { useIsVisible } from 'react-is-visible';
 
 // Load helpers.
 import { getData } from './helpers/GetData.js';
@@ -11,6 +14,33 @@ import { getData } from './helpers/GetData.js';
 // import roundNr from './helpers/RoundNr.js';
 
 // const appID = '#app-root-2022-2022-train_for_trade_ii_angola_ii_angola_components';
+
+function PolicyStatusBar({ component_color, percentage, text_color }) {
+  const isVisibleRef = useRef();
+  const isVisible = useIsVisible(isVisibleRef, { once: true });
+  return (
+    <div ref={isVisibleRef}>
+      <div
+        className="bar"
+        style={(isVisible === true) ? {
+          backgroundColor: component_color,
+          color: text_color,
+          textShadow: `1px 1px 1px ${component_color}`,
+          width: `${percentage}%`
+        } : { width: 0 }}
+      >
+        <span className="value">{percentage}</span>
+        <span className="unit">%</span>
+      </div>
+    </div>
+  );
+}
+
+PolicyStatusBar.propTypes = {
+  component_color: PropTypes.string.isRequired,
+  percentage: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+  text_color: PropTypes.string.isRequired
+};
 
 function Policies() {
   const [data, setData] = useState(false);
@@ -187,24 +217,7 @@ function Policies() {
                 <p>{el.policy_desc}</p>
                 <div className="policy_complete_container">
                   <h4>Status</h4>
-                  <IsVisible once>
-                    {(isVisible) => (
-                      <div>
-                        <div
-                          className="bar"
-                          style={(isVisible === true) ? {
-                            backgroundColor: el.component_color,
-                            color: el.text_color,
-                            textShadow: `1px 1px 1px ${el.component_color}`,
-                            width: `${el.percentage}%`
-                          } : { width: 0 }}
-                        >
-                          <span className="value">{el.percentage}</span>
-                          <span className="unit">%</span>
-                        </div>
-                      </div>
-                    )}
-                  </IsVisible>
+                  <PolicyStatusBar component_color={el.component_color} percentage={el.percentage} text_color={el.text_color} />
                 </div>
                 <div className="component_container">
                   <h4>

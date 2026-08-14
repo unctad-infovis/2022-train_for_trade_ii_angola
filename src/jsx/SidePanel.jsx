@@ -5,7 +5,7 @@ import '../styles/side_panel.less';
 
 // https://www.npmjs.com/package/react-is-visible
 import 'intersection-observer';
-import IsVisible from 'react-is-visible';
+import { useIsVisible } from 'react-is-visible';
 // https://www.npmjs.com/package/react-countup
 import CountUp from 'react-countup';
 
@@ -17,6 +17,8 @@ import roundNr from './helpers/RoundNr.js';
 const appID = '#app-root-2022-train_for_trade_ii_angola_side_panel';
 
 function SidePanel() {
+  const isVisibleRef1 = useRef();
+  const isVisible1 = useIsVisible(isVisibleRef1, { once: true });
   let hasStarted = false;
 
   const appRef = useRef(null);
@@ -123,13 +125,9 @@ function SidePanel() {
     <div className="app" ref={appRef}>
       <div className="total_container">
         <div className="value">
-          <IsVisible once>
-            {(isVisible) => (
-              <div style={{ height: 55, display: 'inline-block', width: 182 }}>
-                {(isVisible && hasStarted === false && femaleCount > 0) ? <CountUp delay={1} end={(femaleCount + maleCount + blankCount)} start={0} duration={3} useEasing easingFn={easingFn} onEnd={() => onCoutUpEnd()} onStart={onCoutUpStart} formattingFn={formatNr} /> : null}
-              </div>
-            )}
-          </IsVisible>
+          <div ref={isVisibleRef1} style={{ height: 55, display: 'inline-block', width: 182 }}>
+            {(isVisible1 && hasStarted === false && femaleCount > 0) ? <CountUp delay={1} end={(femaleCount + maleCount + blankCount)} start={0} duration={3} useEasing easingFn={easingFn} onEnd={() => onCoutUpEnd()} onStart={onCoutUpStart} formattingFn={formatNr} /> : null}
+          </div>
         </div>
         <div className="label">Trained people in total</div>
       </div>
